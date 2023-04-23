@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .polygon {
+      margin: 0 auto;
+
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="./input.css">
+</head>
+
+<body>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="/" class="flex items-center">
+        <img src="https://seesawvietnam.com/wp-content/uploads/2022/04/Brandmark-1.png" class="h-10"
+          alt="seesawvietnam Logo" />
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="/promote.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent capitalize">Ưu
+              Đãi </a>
+          </li>
+          <li>
+            <a href="/login.html"
+              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Đăng
+              nhập</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="relative h-[100vh] hero-bg bg-[#4ade80] bg-no-repeat bg-center bg-cover"
+    style="background-image: url('https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/05/7.jpg?resize=1536%2C1536&ssl=1');">
+    <div class="w-2/6 absolute top-1/2 right-10 -translate-y-1/2">
+      <div class="bg-white p-10 ">
+        <div>
+          <div class="w-3/4 h-3/4 mx-auto">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+              class="swiper mySwiper2 w-full h-full" id="swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-bg-color="#f97316" swiper-slide-active>
+                  <img
+                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/06/1-2.jpg?resize=1536%2C1536&ssl=1" />
+                </div>
+                <div class="swiper-slide" data-bg-color="#22d3ee">
+                  <img
+                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137360387_de1a8b6281eccdf971d7c8dac2cff195.jpg?w=1280&ssl=1" />
+                </div>
+                <div class="swiper-slide" data-bg-color="#FBBF24">
+                  <img
+                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137336904_58a387f21353ac3fd2b1e67922d297f8.jpg?w=1280&ssl=1" />
+                </div>
+                <div class="swiper-slide" data-bg-color="#1d4ed8">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide" data-bg-color="#fff">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div thumbsSlider="" class="swiper mySwiper" id="swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/06/1-2.jpg?resize=1536%2C1536&ssl=1" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137360387_de1a8b6281eccdf971d7c8dac2cff195.jpg?w=1280&ssl=1" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137336904_58a387f21353ac3fd2b1e67922d297f8.jpg?w=1280&ssl=1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var swiper = new Swiper("#swiper1", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper("#swiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+      effect: 'flip',
+      speed: 500
+    });
+    swiper2.on('slideChange', function () {
+      console.log(swiper2.activeIndex)
+      const colorList = ["https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/05/7.jpg?resize=1536%2C1536&ssl=1", "https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163172000302_761ee16426a6376920101339c7deea04.jpg?resize=1536%2C1536&ssl=1",
+        "https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137354418_e26ecb067f8c38f8473088b630683eb9.jpg?w=1280&ssl=1",
+        "https://swiperjs.com/demos/images/nature-4.jpg", "https://swiperjs.com/demos/images/nature-5.jpg"]
+      var activeSlide = $('.swiper-slide-active');
+      // var bgColor = activeSlide.attr('data-bg-color');
+      // console.log(bgColor)
+      $('.hero-bg').css('background-color', colorList[swiper2.activeIndex]);
+      $('.hero-bg').css('background-image', 'url(' + colorList[swiper2.activeIndex] + ')');;
+    });
+    // swiper.on('slideChange', function () {
+    //   console.log('Slide changed');
+    //   var activeSlide = $('.swiper-slide-active');
+    //   var bgColor = activeSlide.attr('data-bg-color');
+    //   console.log(bgColor);
+    //   $('.hero-bg').css('background-color', bgColor);
+    // });
+  </script>
+</body>
+
+</html>
