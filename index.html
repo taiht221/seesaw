@@ -11,76 +11,90 @@
 
   <!-- Demo styles -->
   <style>
-    .swiper {
-      width: 100%;
-      height: 100%;
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+    body {
+      font-family: Montserrat, sans-serif;
+      line-height: 1.4;
     }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
+    img {
+      width: 200px;
+      display: block;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (min-width: 700px) {
+      img {
+        width: 400px;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      img {
+        width: 600px;
+      }
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      height: 100vh;
+    }
+
+    .left,
+    .right {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
+    .grid-text {
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100%;
-      object-fit: cover;
     }
 
-    body {
-      background: #000;
-      color: #000;
+    .grid-image {
+      position: fixed;
+      z-index: 100;
     }
 
-    .swiper {
-      width: 100%;
-      height: 300px;
-      margin-left: auto;
-      margin-right: auto;
+    .image-1,
+    .image-2,
+    .image-3 {
+      opacity: 0;
     }
 
-    .swiper-slide {
-      background-size: cover;
-      background-position: center;
-    }
-
-    .mySwiper2 {
-      height: 80%;
-      width: 100%;
-    }
-
-    .mySwiper {
-      height: 20%;
-      box-sizing: border-box;
-      padding: 10px 0;
-    }
-
-    .mySwiper .swiper-slide {
-      width: 25%;
-      height: 100%;
-      opacity: 0.4;
-    }
-
-    .mySwiper .swiper-slide-thumb-active {
+    .image-1.active,
+    .image-2.active,
+    .image-3.active {
+      -webkit-animation: fadeIn 1000ms ease forwards;
+      animation: fadeIn 1000ms ease forwards;
       opacity: 1;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    @-webkit-keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
 
-    .polygon {
-      margin: 0 auto;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
 
-      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      100% {
+        opacity: 1;
+      }
     }
   </style>
 
@@ -135,108 +149,140 @@
       </div>
     </div>
   </nav>
-  <div class="relative h-[100vh] hero-bg bg-[#4ade80] bg-no-repeat bg-center bg-cover"
-    style="background-image: url('https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/05/7.jpg?resize=1536%2C1536&ssl=1');">
-    <div class="w-2/6 absolute top-1/2 right-10 -translate-y-1/2">
-      <div class="bg-white p-10 ">
-        <div>
-          <div class="w-3/4 h-3/4 mx-auto">
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-              class="swiper mySwiper2 w-full h-full" id="swiper2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" data-bg-color="#f97316" swiper-slide-active>
-                  <img
-                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/06/1-2.jpg?resize=1536%2C1536&ssl=1" />
-                </div>
-                <div class="swiper-slide" data-bg-color="#22d3ee">
-                  <img
-                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137360387_de1a8b6281eccdf971d7c8dac2cff195.jpg?w=1280&ssl=1" />
-                </div>
-                <div class="swiper-slide" data-bg-color="#FBBF24">
-                  <img
-                    src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137336904_58a387f21353ac3fd2b1e67922d297f8.jpg?w=1280&ssl=1" />
-                </div>
-                <div class="swiper-slide" data-bg-color="#1d4ed8">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide" data-bg-color="#fff">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-              </div>
-            </div>
-          </div>
+  <div class="relative h-[100vh] hero-bg bg-no-repeat bg-center bg-cover">
 
-        </div>
-
-      </div>
-
-      <div thumbsSlider="" class="swiper mySwiper" id="swiper1">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img
-              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/06/1-2.jpg?resize=1536%2C1536&ssl=1" />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137360387_de1a8b6281eccdf971d7c8dac2cff195.jpg?w=1280&ssl=1" />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137336904_58a387f21353ac3fd2b1e67922d297f8.jpg?w=1280&ssl=1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </div>
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+    <section id="section1">
+      <div class="section-grid">
+        <div class="left">
+          <div class="grid-text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam error.
+              Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae cupiditate
+              itaque omnis eum fuga iste?</p>
           </div>
         </div>
+        <div class="right">
+          <div class="grid-image image-1 active"><img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg" /></div>
+        </div>
       </div>
-
+    </section>
+    <section id="section2">
+      <div class="section-grid">
+        <div class="left">
+          <div class="grid-text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam error.
+              Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae cupiditate
+              itaque omnis eum fuga iste?</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="grid-image image-2 active"><img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg" /></div>
+        </div>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="section-grid">
+        <div class="left">
+          <div class="grid-text">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam error.
+              Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae cupiditate
+              itaque omnis eum fuga iste?</p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="grid-image image-3 active"><img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg" /></div>
+        </div>
+      </div>
+    </section>
+    <div id='a' class=" ">
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
+      <div>
+        sâfffffffffffffffffff
+      </div>
     </div>
+
   </div>
 
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <script>
-    var swiper = new Swiper("#swiper1", {
-      spaceBetween: 10,
-      slidesPerView: 4,
-      freeMode: true,
-      watchSlidesProgress: true,
+
+    // find the top of each section
+    var section1 = $('#section1').offset().top;
+    var section2 = $('#section2').offset().top;
+    var section3 = $('#section3').offset().top;
+    var section4 = $('#a').offset().top;
+    // number of pixels before the section to change image
+    var scrollOffset = 300;
+
+
+    // run this function when the window scrolls
+    $(window).scroll(function () {
+
+
+      // get the window height on scroll
+      var scroll = $(window).scrollTop() + scrollOffset;
+
+
+      // if scroll hits the top of section 1  
+      if (scroll < 500) {
+        $('.grid-image img').attr('src', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/0st9yhngses-benjamin-child.jpg');
+      }
+
+      // if scroll hits the top of section 2
+      if (scroll > section2) {
+        $('.grid-image img').attr('src', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/2fgvaqx-fxs-oskar-krawczyk.jpg');
+      }
+
+      // if scroll hits the top of section 3
+      if (scroll > section3) {
+        $('.grid-image img').attr('src', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/495197/Great_Wave_off_Kanagawa2_cr.jpg');
+      }
+      if (scroll > (section4 - 300)) {
+        $('.grid-image img').attr('src', '');
+      }
     });
-    var swiper2 = new Swiper("#swiper2", {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-      effect: 'flip',
-      speed: 500
-    });
-    swiper2.on('slideChange', function () {
-      console.log(swiper2.activeIndex)
-      const colorList = ["https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2022/05/7.jpg?resize=1536%2C1536&ssl=1", "https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163172000302_761ee16426a6376920101339c7deea04.jpg?resize=1536%2C1536&ssl=1",
-        "https://i0.wp.com/seesawvietnam.com/wp-content/uploads/2023/03/z4163137354418_e26ecb067f8c38f8473088b630683eb9.jpg?w=1280&ssl=1",
-        "https://swiperjs.com/demos/images/nature-4.jpg", "https://swiperjs.com/demos/images/nature-5.jpg"]
-      var activeSlide = $('.swiper-slide-active');
-      // var bgColor = activeSlide.attr('data-bg-color');
-      // console.log(bgColor)
-      $('.hero-bg').css('background-color', colorList[swiper2.activeIndex]);
-      $('.hero-bg').css('background-image', 'url(' + colorList[swiper2.activeIndex] + ')');;
-    });
-    // swiper.on('slideChange', function () {
-    //   console.log('Slide changed');
-    //   var activeSlide = $('.swiper-slide-active');
-    //   var bgColor = activeSlide.attr('data-bg-color');
-    //   console.log(bgColor);
-    //   $('.hero-bg').css('background-color', bgColor);
-    // });
+
+
+
+
   </script>
 </body>
 
