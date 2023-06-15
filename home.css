@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Livvic', sans-serif;
+  line-height: 1.4;
+}
+.logo {
+  width: 96px;
+  height: 76px;
+}
+.heading {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  color: #135dbb;
+}
+
+.nav_link {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #135dbb;
+}
+.solution-card {
+  width: calc(100% / 3);
+  background: #ffffff;
+  border-radius: 30px;
+}
+.solution-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  color: #135dbb;
+}
+.solution-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  color: #135dbb;
+}
+.main-button {
+  display: flex;
+  color: #ff5dc8;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.intro-card {
+  display: flex;
+}
+.intro-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  color: #135dbb;
+}
+.intro-content {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #135dbb;
+}
