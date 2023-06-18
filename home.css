@@ -88,3 +88,98 @@ body {
 
   color: #135dbb;
 }
+.line {
+  margin: 30px 0;
+  border: 1px solid #135dbb;
+}
+
+.footer-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  color: #135dbb;
+}
+.footer-desc {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #135dbb;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .heading {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .solution-card {
+    width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  .intro-card {
+    width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  .intro-card div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .intro-card div h3 {
+    width: 100%;
+  }
+  .intro-card div:last-child {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background: unset;
+  }
+  .intro-title {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    color: #135dbb;
+  }
+  .booking {
+    margin-bottom: 300px;
+  }
+  .blog div:last-child {
+    flex-direction: column;
+  }
+  footer {
+    padding: 20px 0;
+  }
+  footer div:first-child {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+  .footer-right {
+    flex-direction: column;
+  }
+  .footer-right,
+  .footer-title {
+    font-size: 16px;
+  }
+  .footer-right,
+  .footer-desc {
+    font-size: 12px;
+  }
+}

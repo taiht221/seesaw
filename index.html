@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="px-[15px] max-w-screen-xl">
   <nav class=" border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="hidden  md:flex  md:items-center md:justify-center md:w-1/3" id="navbar-default">
@@ -54,14 +54,15 @@
 
     </div>
   </nav>
-  <div class="relative bg-[#fbf7ea] mb-10">
-    <img src="./home_banner.png" alt="" class="w-full h-full object-cover rounded-lg">
+  <div class="relative bg-[#fbf7ea] mb-10 md:h-[100vh] h-[30vh] bg-center bg-contain bg-no-repeat"
+    style="background-image: url('./home_banner.png');">
+    <!-- <img src="./home_banner.png" alt="" class="w-full h-full object-cover rounded-lg"> -->
   </div>
   <div class="what-we-do mb-6">
     <div>
       <h2 class="heading">Giải pháp của chúng tôi</h2>
     </div>
-    <div class="flex items-center justify-between space-x-4">
+    <div class="flex items-center justify-between space-x-4 md:flex-row flex-col">
       <div class="solution-card flex md:flex-col p-10">
         <img src="./solution1.png" alt="TRÒ CHƠI CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
         <h3 class="solution-title mb-4">TRÒ CHƠI CHĂM SÓC TINH THẦN</h3>
@@ -117,46 +118,193 @@
 
       </div>
       <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
+        <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
         <p class="intro-content mb-8">
-          Ngoài sản phẩm, Seesaw cũng cung cấp dịch vụ tổ chức chương trình Workshop chăm sóc tinh thần. Nội dung
-          chương trình sẽ được cá nhân hóa theo đối tượng tham gia, nhu cầu và đặc điểm của phía tổ chức.
+          Bộ bài trò chuyện và nhập vai, giúp người chơi chia sẻ về những sự kiện xảy ra trong tuần qua của mình thông
+          qua các câu hỏi gợi ý sáng tạo và sâu sắc.
         </p>
       </div>
 
     </div>
     <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5">
       <div class="w-1/2 h-full ">
-        <img src="./intro-card.png" alt="" class="w-full h-full object-cover">
+        <img src="./intro2.png" alt="" class="w-full h-full object-cover">
 
       </div>
       <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
+        <h3 class="intro-title mb-4">SỔ NHẬT KÝ VẼ MÙA HÈ TRÒN TRĨNH</h3>
         <p class="intro-content mb-8">
-          Ngoài sản phẩm, Seesaw cũng cung cấp dịch vụ tổ chức chương trình Workshop chăm sóc tinh thần. Nội dung
-          chương trình sẽ được cá nhân hóa theo đối tượng tham gia, nhu cầu và đặc điểm của phía tổ chức.
+          Quyển sổ với chủ đề đi tìm hạnh phúc qua 84 gợi ý minh họa, giúp người chơi tìm được hạnh phúc ẩn giấu ở khắp
+          nơi trong cuộc sống của chúng mình thông qua việc tìm câu trả lời cho các gợi ý.
         </p>
       </div>
 
     </div>
     <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5 ">
       <div class="w-1/2 h-full ">
-        <img src="./intro-card.png" alt="" class="w-full h-full object-cover">
+        <img src="./intro3.png" alt="" class="w-full h-full object-cover">
 
       </div>
       <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
+        <h3 class="intro-title mb-4">POSTCARD THÔNG ĐIỆP TỪ MÙA HÈ TRÒN TRĨNH</h3>
         <p class="intro-content mb-8">
-          Ngoài sản phẩm, Seesaw cũng cung cấp dịch vụ tổ chức chương trình Workshop chăm sóc tinh thần. Nội dung
-          chương trình sẽ được cá nhân hóa theo đối tượng tham gia, nhu cầu và đặc điểm của phía tổ chức.
+          6 mẫu postcard với nhiều thông điệp dễ thương, nhắc nhở rằng mỗi chúng mình đều có những giá trị và vẻ đẹp
+          riêng, và mỗi chúng mình là duy nhất!
         </p>
       </div>
 
     </div>
   </div>
+  <div class="booking">
+    <div>
+      <h2 class="heading">book lịch tại tiệm bập bênh </h2>
+    </div>
+    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5">
+      <div class="w-1/2 h-full ">
+        <img src="./book.png" alt="" class="w-full h-full object-cover">
 
+      </div>
+      <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+        <form class="w-full max-w-sm">
+          <div class="flex items-center border-b border-[#135DBB] py-2">
+            <input
+              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+              type="text" placeholder="Tên của bạn" aria-label="Full name">
 
+          </div>
+          <div class="flex space-x-3">
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Ngày muốn đặt" aria-label="Full name">
 
+            </div>
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Thời gian đến tiệm" aria-label="Full name">
+
+            </div>
+          </div>
+          <div class="flex items-center border-b border-[#135DBB] py-2">
+            <input
+              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+              type="text" placeholder="Số điện thoại" aria-label="Full name">
+
+          </div>
+          <div class="flex space-x-3">
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Loại vé" aria-label="Full name">
+
+            </div>
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Số lượng vé" aria-label="Full name">
+
+            </div>
+          </div>
+          <div class="flex items-center border-b border-[#135DBB] py-2">
+            <input
+              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+              type="text" placeholder="Lưu ý khác" aria-label="Full name">
+
+          </div>
+          <div class="flex items-center py-2">
+            <button
+              class="bg-transparent hover:bg-blue-500 text-[#135DBB] font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              Đặt lịch
+            </button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <div class="blog">
+    <div>
+      <h2 class="heading">Feature blog</h2>
+    </div>
+    <div class="flex md:space-x-5 space-x-0">
+      <div class="max-w-sm rounded overflow-hidden ">
+        <img class="w-full" src="./blog1.png" alt="Sunset in the mountains">
+        <div class="md:px-6 py-4">
+          <div class=" mb-2 solution-title">Cẩm nang tránh nóng</div>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden ">
+        <img class="w-full" src="./blog2.png" alt="Sunset in the mountains">
+        <div class="md:px-6 py-4">
+          <div class=" mb-2 solution-title">cảm xúc là một năm tiết trời</div>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden ">
+        <img class="w-full" src="./blog3.png" alt="Sunset in the mountains">
+        <div class="md:px-6 py-4">
+          <div class=" mb-2 solution-title">ăn một giấc ngủ thật ngon!</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="line">
+  <footer>
+    <div class="flex justify-around mb-10">
+      <div class="footer-left md:w-1/2">
+        <img src="./footer-logo.svg" alt="">
+
+      </div>
+      <div class="footer-right md:w-1/3 h-full flex md:flex-col justify-center items-center">
+        <h3 class="footer-title">NHẬN THÊM THÔNG TIN CỦA CHÚNG TÔI</h3>
+        <p class="footer-desc">
+          Chúng tôi sẽ hỏi thăm bạn bằng những thông điệp yêu thương bản thân và thương mời bạn tới những chương trình
+          tương tác & kết nối cho Seesaw tổ chức bạn nhé!
+        </p>
+        <div class="flex items-center border-b border-[#135DBB] py-2 w-full">
+          <input
+            class="appearance-none bg-transparent border-none w-full text-[#135DBB] py-1  leading-tight focus:outline-none"
+            type="text" placeholder="Email" aria-label="Full name">
+
+        </div>
+      </div>
+    </div>
+    <div class="sm:flex sm:items-center md:px-10 sm:justify-around md:ml-5">
+      <span class="text-sm text-[#135DBB]  dark:text-gray-400 w-1/2">© 2023 <a href="https://flowbite.com/"
+          class="hover:underline">Seesaw™</a>. All Rights Reserved.
+      </span>
+      <div class="flex mt-4 space-x-6  sm:mt-0 w-1/3">
+        <a href="#" class="text-[#135DBB] hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+        <a href="#" class="text-[#135DBB] hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Instagram page</span>
+        </a>
+        <a href="#" class="text-[#135DBB] hover:text-gray-900 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+          </svg>
+          <span class="sr-only">Twitter page</span>
+        </a>
+
+      </div>
+    </div>
+  </footer>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
