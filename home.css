@@ -183,3 +183,59 @@ footer {
     font-size: 12px;
   }
 }
+
+#banner-input {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transition-property: all;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1.6;
+  padding-top: 0.32rem;
+  padding-bottom: 0.32rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  z-index: 50;
+  background-color: transparent;
+  border: 1px solid white;
+}
+::placeholder {
+  color: #135dbb !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #135dbb !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #135dbb !important;
+}
+
+#banner-input::placeholder {
+  color: white !important;
+  opacity: 1; /* Firefox */
+}
+
+#banner-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white !important;
+}
+
+#banner-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white !important;
+}
+.note-text {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: capitalize;
+  color: #135dbb;
+}
