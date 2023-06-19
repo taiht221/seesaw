@@ -27,6 +27,7 @@
 
   <link rel="stylesheet" href="./input.css">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="px-[15px] max-w-screen-2xl mx-auto">
@@ -78,7 +79,7 @@
         <input type="text" class="" id="banner-input" placeholder="Kể cho chúng tớ biết nhé..." />
       </form>
     </div>
-    <div class="absolute  h-3/5 w-full bottom-0 left-0 px-10 ">
+    <div class="absolute  h-3/5 w-full bottom-10 left-0 px-10 ">
       <div class="px-10 flex justify-around">
         <div class="w-[180px] h-[180px] bg-center bg-cover bg-no-repeat p-8 note-list"
           style="background-image: url('./note1.png');">
@@ -133,7 +134,7 @@
       <h2 class="heading">Giải pháp của chúng tôi</h2>
     </div>
     <div class="flex items-center justify-between space-x-4 md:flex-row flex-col">
-      <div class="solution-card flex md:flex-col p-10">
+      <div class="solution-card flex md:flex-col p-10" data-aos="fade-right">
         <img src="./solution1.png" alt="TRÒ CHƠI CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
         <h3 class="solution-title mb-4">TRÒ CHƠI CHĂM SÓC TINH THẦN</h3>
         <p class="solution-content mb-8">Seesaw tự hào là nhà nghiên cứu và phát hành độc quyền giải pháp trò chơi chăm
@@ -147,7 +148,7 @@
           </svg>
         </button>
       </div>
-      <div class="solution-card flex md:flex-col p-10">
+      <div class="solution-card flex md:flex-col p-10" data-aos="flip-up">
         <img src="./solution2.png" alt="KHÔNG GIAN TƯƠNG TÁC" class="w-[80px] h-[80px] mb-6">
         <h3 class="solution-title mb-4">KHÔNG GIAN TƯƠNG TÁC</h3>
         <p class="solution-content mb-8">
@@ -161,7 +162,7 @@
           </svg>
         </button>
       </div>
-      <div class="solution-card flex md:flex-col p-10">
+      <div class="solution-card flex md:flex-col p-10" data-aos="fade-left">
         <img src="./solution3.png" alt="HOẠT ĐỘNG CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
         <h3 class="solution-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
         <p class="solution-content mb-8">
@@ -182,7 +183,7 @@
     <div>
       <h2 class="heading">SẢN PHẨM TRÒ CHƠI CHĂM SÓC TINH THẦN</h2>
     </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5">
+    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
       <div class="w-1/2 h-full ">
         <img src="./intro-card.png" alt="" class="w-full h-full object-cover">
 
@@ -196,7 +197,7 @@
       </div>
 
     </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5">
+    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
       <div class="w-1/2 h-full ">
         <img src="./intro2.png" alt="" class="w-full h-full object-cover">
 
@@ -210,7 +211,7 @@
       </div>
 
     </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5 ">
+    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5 " data-aos="zoom-out">
       <div class="w-1/2 h-full ">
         <img src="./intro3.png" alt="" class="w-full h-full object-cover">
 
@@ -229,7 +230,7 @@
     <div>
       <h2 class="heading">book lịch tại tiệm bập bênh </h2>
     </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5">
+    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
       <div class="w-1/2 h-full ">
         <img src="./book.png" alt="" class="w-full h-full object-cover">
 
@@ -301,19 +302,19 @@
       <h2 class="heading">Feature blog</h2>
     </div>
     <div class="flex md:space-x-5 space-x-0 justify-between">
-      <div class="max-w-sm rounded overflow-hidden ">
+      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-right" data-aos-duration="500">
         <img class="w-full" src="./blog1.png" alt="Sunset in the mountains">
         <div class="md:px-6 py-4">
           <div class=" mb-2 solution-title">Cẩm nang tránh nóng</div>
         </div>
       </div>
-      <div class="max-w-sm rounded overflow-hidden ">
+      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-down" data-aos-duration="500">
         <img class="w-full" src="./blog2.png" alt="Sunset in the mountains">
         <div class="md:px-6 py-4">
           <div class=" mb-2 solution-title">cảm xúc là một năm tiết trời</div>
         </div>
       </div>
-      <div class="max-w-sm rounded overflow-hidden ">
+      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-left" data-aos-duration="500">
         <img class="w-full" src="./blog3.png" alt="Sunset in the mountains">
         <div class="md:px-6 py-4">
           <div class=" mb-2 solution-title">ăn một giấc ngủ thật ngon!</div>
@@ -378,7 +379,7 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="./home.js"></script>
 </body>
 

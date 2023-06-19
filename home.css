@@ -38,6 +38,7 @@ body {
   width: calc(100% / 3);
   background: #ffffff;
   border-radius: 30px;
+  height: 100%;
 }
 .solution-title {
   font-family: 'Livvic';
@@ -46,7 +47,7 @@ body {
   font-size: 20px;
   line-height: 25px;
   text-transform: uppercase;
-
+  height: 50px;
   color: #135dbb;
 }
 .solution-content {
@@ -238,4 +239,25 @@ footer {
   line-height: normal;
   text-transform: capitalize;
   color: #135dbb;
+}
+.note-list {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+
+  animation: wind 2s ease-out alternate infinite;
+  /* box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.2); */
+}
+@keyframes wind {
+  0% {
+    transform: rotatex(0);
+    /* box-shadow: 0 15px 10px -10px #000; */
+    /* color: rgba(#eee, 0.6); */
+    /* background: #eee; */
+  }
+  10% {
+    transform: rotatex(15deg);
+    /* box-shadow: 0 15px 10px -10px lighten(#000, 5%); */
+    /* color: rgba(#6d6875, 0.45); */
+    /* background: lighten(#2196f3, 3%); */
+  }
 }
