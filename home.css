@@ -261,3 +261,14 @@ footer {
     /* background: lighten(#2196f3, 3%); */
   }
 }
+
+.down {
+  animation: bounce-loader 0.6s infinite alternate;
+}
+
+@keyframes bounce-loader {
+  to {
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+}
