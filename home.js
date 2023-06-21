@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
   AOS.init()
   var idInput = 0
@@ -12,5 +14,23 @@ $(document).ready(function () {
     $('input:first').val('')
     console.log(idInput)
     if (idInput == 10) idInput = 0
+  })
+  function menuTop() {
+    if (window.location.pathname === '/' && window.location.search === '') {
+      if ($(this).scrollTop() >= 200) {
+        $('.header').addClass('active')
+      } else {
+        $('.header').removeClass('active')
+      }
+    } else {
+      $('.header').addClass('active')
+    }
+  }
+  menuTop()
+  $(window).scroll(menuTop)
+  $('.hamburger').on('click', function () {
+    $('.hamburger').toggleClass('active')
+    $('.menu-right').toggleClass('active')
+    $('#banner-input').toggleClass('active')
   })
 })

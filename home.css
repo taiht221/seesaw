@@ -16,7 +16,7 @@ body {
   line-height: 50px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin: 36px 0;
   color: #135dbb;
 }
 
@@ -69,6 +69,7 @@ body {
 
 .intro-card {
   display: flex;
+  margin-bottom: 50px;
 }
 .intro-title {
   font-family: 'Livvic';
@@ -240,6 +241,15 @@ footer {
   text-transform: capitalize;
   color: #135dbb;
 }
+#banner-input.active {
+  display: none !important;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .note-text {
+    font-size: 8px;
+    font-weight: 400;
+  }
+}
 .note-list {
   -webkit-transform-origin: top center;
   transform-origin: top center;
@@ -270,5 +280,43 @@ footer {
   to {
     opacity: 0.5;
     margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .homepage {
+    padding-top: 20px;
+  }
+
+  .nav_link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: normal;
+    color: #135dbb;
+  }
+  .header__wrap {
+    padding: 0 10px;
+  }
+  .header__wrap nav {
+    width: 50%;
+  }
+  .banner-top {
+    height: 50vh;
+  }
+  .note-list {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+  }
+  .note-text {
+    font-size: 12px;
+  }
+  .banner-top > div:nth-child(2) {
+    height: 50%;
+  }
+  .scroll-down {
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    right: 20px;
   }
 }

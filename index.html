@@ -23,15 +23,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="./home.css">
 
   <link rel="stylesheet" href="./input.css">
-
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./home.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="px-[15px] max-w-screen-xl mx-auto">
-  <nav class=" border-gray-200 dark:bg-gray-900">
+<body class="md:pt-0 ">
+  <!-- <header class=" border-gray-200 dark:bg-gray-900">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="hidden  md:flex  md:items-center md:justify-center md:w-1/3" id="navbar-default">
         <ul
@@ -70,259 +70,323 @@
       </button>
 
     </div>
-  </nav>
-  <div class="relative bg-[#fbf7ea] mb-10 md:h-[100vh] h-[30vh] bg-center bg-contain bg-no-repeat"
-    style="background-image: url('./home_banner.png');">
-    <!-- <img src="./home_banner.png" alt="" class="w-full h-full object-cover rounded-lg"> -->
-    <div class="absolute top-1/4 left-1/2 z-[10] -translate-x-1/2 w-1/3">
-      <form id="banner-form">
-        <input type="text" class="" id="banner-input" placeholder="Kể cho chúng tớ biết nhé..." />
-      </form>
-    </div>
-    <div class="absolute  h-3/5 w-full bottom-10 left-0 px-10 ">
-      <div class="px-10 flex justify-around">
-        <div class="w-[180px] h-[180px] bg-center bg-cover bg-no-repeat p-8 note-list"
-          style="background-image: url('./note1.png');">
-          <p class="note-text">
-            Hôm nay là một ngày thật đẹp
-          </p>
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note3.png');">
+  </header> -->
+  <header class="header">
+    <div class="header__wrap">
 
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note2.png');">
 
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note4.png');">
+      <nav class="w-1/3 font-medium none md:flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8">
 
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note8.png');">
+        <li>
+          <a href="#" class="nav_link uppercase">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="nav_link uppercase">Shop</a>
+        </li>
+        <li>
+          <a href="/promote.html" class="nav_link uppercase">Booking</a>
+        </li>
+        <li>
+          <a href="/login.html" class="nav_link uppercase">Blog</a>
+        </li>
+      </nav>
 
-        </div>
+      <div class="md:w-1/3 flex md:justify-center">
+        <a href="/" class="flex items-center " class="block mx-auto">
+          <img src="./seesaw.svg" class="logo" alt="seesawvietnam Logo" />
+        </a>
       </div>
-      <div class="px-10 flex justify-around">
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note2.png');">
+      <div class="w-1/3">
+        <p class="md:text-right text-center nav_link">MY CART (0)</p>
+      </div>
+      <div class="hamburger">
+        <div></div>
+      </div>
+    </div>
+    <div class="header__mobile">
 
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note7.png');">
+      <div class="menu-right">
 
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note6.png');">
-
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note9.png');">
-
-        </div>
-        <div class="w-[180px] h-[180px] bg-center bg-contain bg-no-repeat p-8 note-list"
-          style="background-image: url('./note7.png');">
-
-        </div>
+        <ul>
+          <li>
+            <a href="#" class="nav_link uppercase ">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="nav_link uppercase ">Shop</a>
+          </li>
+          <li>
+            <a href="/promote.html" class="nav_link uppercase ">Booking</a>
+          </li>
+          <li>
+            <a href="/login.html" class="nav_link uppercase ">Blog</a>
+          </li>
+        </ul>
       </div>
     </div>
 
-  </div>
-  <div class="what-we-do mb-6">
-    <div>
-      <h2 class="heading">Giải pháp của chúng tôi</h2>
-    </div>
-    <div class="flex items-center justify-between space-x-4 md:flex-row flex-col">
-      <div class="solution-card flex md:flex-col p-10" data-aos="fade-right">
-        <img src="./solution1.png" alt="TRÒ CHƠI CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
-        <h3 class="solution-title mb-4">TRÒ CHƠI CHĂM SÓC TINH THẦN</h3>
-        <p class="solution-content mb-8">Seesaw tự hào là nhà nghiên cứu và phát hành độc quyền giải pháp trò chơi chăm
-          sóc
-          tinh thần với phương châm “Do No Harm” - Đảm bảo yếu tố an toàn, lành mạnh và hiệu quả với mong muốn của mỗi
-          khách hàng.</p>
-        <button class="main-button">
-          Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
-            stroke="currentColor" class="w-4 h-4 ml-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </button>
-      </div>
-      <div class="solution-card flex md:flex-col p-10" data-aos="flip-up">
-        <img src="./solution2.png" alt="KHÔNG GIAN TƯƠNG TÁC" class="w-[80px] h-[80px] mb-6">
-        <h3 class="solution-title mb-4">KHÔNG GIAN TƯƠNG TÁC</h3>
-        <p class="solution-content mb-8">
-          Tiệm Bập Bênh là không gian tương tác sáng tạo chăm sóc tinh thần của Seesaw, nơi người chơi có thể dành
-          thời gian cho bản thân thông qua các hoạt động thủ công, sáng tạo, và trải nghiệm sản phẩm của Seesaw.
-        </p>
-        <button class="main-button">
-          Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
-            stroke="currentColor" class="w-4 h-4 ml-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </button>
-      </div>
-      <div class="solution-card flex md:flex-col p-10" data-aos="fade-left">
-        <img src="./solution3.png" alt="HOẠT ĐỘNG CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
-        <h3 class="solution-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
-        <p class="solution-content mb-8">
-          Ngoài sản phẩm, Seesaw cũng cung cấp dịch vụ tổ chức chương trình Workshop chăm sóc tinh thần. Nội dung
-          chương trình sẽ được cá nhân hóa theo đối tượng tham gia, nhu cầu và đặc điểm của phía tổ chức.
-        </p>
-        <button class="main-button">
-          Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
-            stroke="currentColor" class="w-4 h-4 ml-2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-          </svg>
-        </button>
-      </div>
-
-    </div>
-  </div>
-  <div class="intro">
-    <div>
-      <h2 class="heading">SẢN PHẨM TRÒ CHƠI CHĂM SÓC TINH THẦN</h2>
-    </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
-      <div class="w-1/2 h-full ">
-        <img src="./intro-card.png" alt="" class="w-full h-full object-cover">
-
-      </div>
-      <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
-        <p class="intro-content mb-8">
-          Bộ bài trò chuyện và nhập vai, giúp người chơi chia sẻ về những sự kiện xảy ra trong tuần qua của mình thông
-          qua các câu hỏi gợi ý sáng tạo và sâu sắc.
-        </p>
-      </div>
-
-    </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
-      <div class="w-1/2 h-full ">
-        <img src="./intro2.png" alt="" class="w-full h-full object-cover">
-
-      </div>
-      <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">SỔ NHẬT KÝ VẼ MÙA HÈ TRÒN TRĨNH</h3>
-        <p class="intro-content mb-8">
-          Quyển sổ với chủ đề đi tìm hạnh phúc qua 84 gợi ý minh họa, giúp người chơi tìm được hạnh phúc ẩn giấu ở khắp
-          nơi trong cuộc sống của chúng mình thông qua việc tìm câu trả lời cho các gợi ý.
-        </p>
-      </div>
-
-    </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5 " data-aos="zoom-out">
-      <div class="w-1/2 h-full ">
-        <img src="./intro3.png" alt="" class="w-full h-full object-cover">
-
-      </div>
-      <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <h3 class="intro-title mb-4">POSTCARD THÔNG ĐIỆP TỪ MÙA HÈ TRÒN TRĨNH</h3>
-        <p class="intro-content mb-8">
-          6 mẫu postcard với nhiều thông điệp dễ thương, nhắc nhở rằng mỗi chúng mình đều có những giá trị và vẻ đẹp
-          riêng, và mỗi chúng mình là duy nhất!
-        </p>
-      </div>
-
-    </div>
-  </div>
-  <div class="booking">
-    <div>
-      <h2 class="heading">book lịch tại tiệm bập bênh </h2>
-    </div>
-    <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out">
-      <div class="w-1/2 h-full ">
-        <img src="./book.png" alt="" class="w-full h-full object-cover">
-
-      </div>
-      <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
-        <form class="w-full max-w-sm">
-          <div class="flex items-center border-b border-[#135DBB] py-2">
-            <input
-              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text" placeholder="Tên của bạn" aria-label="Full name">
-
-          </div>
-          <div class="flex space-x-3">
-            <div class="flex items-center border-b border-[#135DBB] py-2">
-              <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text" placeholder="Ngày muốn đặt" aria-label="Full name">
-
-            </div>
-            <div class="flex items-center border-b border-[#135DBB] py-2">
-
-              <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text" placeholder="Thời gian đến tiệm" aria-label="Full name">
-
-            </div>
-          </div>
-          <div class="flex items-center border-b border-[#135DBB] py-2">
-            <input
-              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text" placeholder="Số điện thoại" aria-label="Full name">
-
-          </div>
-          <div class="flex space-x-3">
-            <div class="flex items-center border-b border-[#135DBB] py-2">
-              <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text" placeholder="Loại vé" aria-label="Full name">
-
-            </div>
-            <div class="flex items-center border-b border-[#135DBB] py-2">
-
-              <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-                type="text" placeholder="Số lượng vé" aria-label="Full name">
-
-            </div>
-          </div>
-          <div class="flex items-center border-b border-[#135DBB] py-2">
-            <input
-              class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
-              type="text" placeholder="Lưu ý khác" aria-label="Full name">
-
-          </div>
-          <div class="flex items-center py-2">
-            <button
-              class="bg-transparent hover:bg-blue-500 text-[#135DBB] font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-              Đặt lịch
-            </button>
-
-          </div>
+  </header>
+  <div class="homepage max-w-screen-xl px-[15px]  mx-auto md:pt-0 pt-[50px]">
+    <div class="relative bg-[#fbf7ea] mb-10 md:h-[100vh] h-[30vh] bg-center bg-contain bg-no-repeat md:mt-0 banner-top"
+      style="background-image: url('./home_banner.png');">
+      <!-- <img src="./home_banner.png" alt="" class="w-full h-full object-cover rounded-lg"> -->
+      <div class="absolute  top-1/4 left-1/2 z-[5] -translate-x-1/2 md:w-1/3 mt-1 ">
+        <form id="banner-form">
+          <input type="text" class="" id="banner-input" placeholder="Kể cho chúng tớ biết nhé..." />
         </form>
       </div>
+      <div class="absolute  md:h-3/5 h-2/5 w-full bottom-10 left-0 md:px-10 ">
+        <div class="px-10 flex justify-around mt-auto">
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-cover bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note1.png');">
+            <p class="note-text">
+              Hôm nay là một ngày thật đẹp
+            </p>
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note3.png');">
 
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note2.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note4.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note8.png');">
+
+          </div>
+        </div>
+        <div class="px-10 flex justify-around">
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note2.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note7.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note6.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note9.png');">
+
+          </div>
+          <div class="md:w-[180px] md:h-[180px] bg-center bg-contain bg-no-repeat md:p-8 p-4 note-list"
+            style="background-image: url('./note7.png');">
+
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-[120px] right-[30px] md:block hidden scroll-down"><img src="./button-down.png" alt=""
+          class="w-full h-full object-cover">
+        <img src="./Arrow-down.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[75%] down"></img>
+      </div>
+    </div>
+    <div class="what-we-do mb-6">
+      <div>
+        <h2 class="heading">Giải pháp của chúng tôi</h2>
+      </div>
+      <div class="flex items-center justify-between md:space-x-4 md:flex-row flex-col">
+        <div class="solution-card flex md:flex-col p-10" data-aos="flip-up" data-aos-duration="700">
+          <img src="./solution1.png" alt="TRÒ CHƠI CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
+          <h3 class="solution-title mb-4">TRÒ CHƠI CHĂM SÓC TINH THẦN</h3>
+          <p class="solution-content mb-8">Seesaw tự hào là nhà nghiên cứu và phát hành độc quyền giải pháp trò chơi
+            chăm
+            sóc
+            tinh thần với phương châm “Do No Harm” - Đảm bảo yếu tố an toàn, lành mạnh và hiệu quả với mong muốn của mỗi
+            khách hàng.</p>
+          <button class="main-button">
+            Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </div>
+        <div class="solution-card flex md:flex-col p-10" data-aos="flip-up" data-aos-duration="700">
+          <img src="./solution2.png" alt="KHÔNG GIAN TƯƠNG TÁC" class="w-[80px] h-[80px] mb-6">
+          <h3 class="solution-title mb-4">KHÔNG GIAN TƯƠNG TÁC</h3>
+          <p class="solution-content mb-8">
+            Tiệm Bập Bênh là không gian tương tác sáng tạo chăm sóc tinh thần của Seesaw, nơi người chơi có thể dành
+            thời gian cho bản thân thông qua các hoạt động thủ công, sáng tạo, và trải nghiệm sản phẩm của Seesaw.
+          </p>
+          <button class="main-button">
+            Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </div>
+        <div class="solution-card flex md:flex-col p-10" data-aos="flip-up" data-aos-duration="700">
+          <img src="./solution3.png" alt="HOẠT ĐỘNG CHĂM SÓC TINH THẦN" class="w-[80px] h-[80px] mb-6">
+          <h3 class="solution-title mb-4">HOẠT ĐỘNG CHĂM SÓC TINH THẦN</h3>
+          <p class="solution-content mb-8">
+            Ngoài sản phẩm, Seesaw cũng cung cấp dịch vụ tổ chức chương trình Workshop chăm sóc tinh thần. Nội dung
+            chương trình sẽ được cá nhân hóa theo đối tượng tham gia, nhu cầu và đặc điểm của phía tổ chức.
+          </p>
+          <button class="main-button">
+            Đặt mua ngay <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5"
+              stroke="currentColor" class="w-4 h-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div class="intro">
+      <div>
+        <h2 class="heading">SẢN PHẨM TRÒ CHƠI CHĂM SÓC TINH THẦN</h2>
+      </div>
+      <div class="intro-card flex justify-stretch items-center  h-[60vh] " data-aos="zoom-out" data-aos-duration="700">
+        <div class="w-1/2 h-full ">
+          <img src="./intro-card.png" alt="" class="w-full h-full object-cover">
+
+        </div>
+        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+          <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
+          <p class="intro-content mb-8">
+            Bộ bài trò chuyện và nhập vai, giúp người chơi chia sẻ về những sự kiện xảy ra trong tuần qua của mình thông
+            qua các câu hỏi gợi ý sáng tạo và sâu sắc.
+          </p>
+        </div>
+
+      </div>
+      <div class="intro-card flex justify-stretch items-center  h-[60vh] " data-aos="zoom-out" data-aos-duration="700">
+        <div class="w-1/2 h-full ">
+          <img src="./intro2.png" alt="" class="w-full h-full object-cover">
+
+        </div>
+        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+          <h3 class="intro-title mb-4">SỔ NHẬT KÝ VẼ MÙA HÈ TRÒN TRĨNH</h3>
+          <p class="intro-content mb-8">
+            Quyển sổ với chủ đề đi tìm hạnh phúc qua 84 gợi ý minh họa, giúp người chơi tìm được hạnh phúc ẩn giấu ở
+            khắp
+            nơi trong cuộc sống của chúng mình thông qua việc tìm câu trả lời cho các gợi ý.
+          </p>
+        </div>
+
+      </div>
+      <div class="intro-card flex justify-stretch items-center  h-[60vh]  " data-aos="zoom-out" data-aos-duration="700">
+        <div class="w-1/2 h-full ">
+          <img src="./intro3.png" alt="" class="w-full h-full object-cover">
+
+        </div>
+        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+          <h3 class="intro-title mb-4">POSTCARD THÔNG ĐIỆP TỪ MÙA HÈ TRÒN TRĨNH</h3>
+          <p class="intro-content mb-8">
+            6 mẫu postcard với nhiều thông điệp dễ thương, nhắc nhở rằng mỗi chúng mình đều có những giá trị và vẻ
+            đẹp
+            riêng, và mỗi chúng mình là duy nhất!
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="booking">
+      <div>
+        <h2 class="heading">book lịch tại tiệm bập bênh </h2>
+      </div>
+      <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out"
+        data-aos-duration="700">
+        <div class="w-1/2 h-full ">
+          <img src="./book.png" alt="" class="w-full h-full object-cover">
+
+        </div>
+        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+          <form class="w-full max-w-sm">
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Tên của bạn" aria-label="Full name">
+
+            </div>
+            <div class="flex space-x-3">
+              <div class="flex items-center border-b border-[#135DBB] py-2">
+                <input
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  type="text" placeholder="Ngày muốn đặt" aria-label="Full name">
+
+              </div>
+              <div class="flex items-center border-b border-[#135DBB] py-2">
+
+                <input
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  type="text" placeholder="Thời gian đến tiệm" aria-label="Full name">
+
+              </div>
+            </div>
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Số điện thoại" aria-label="Full name">
+
+            </div>
+            <div class="flex space-x-3">
+              <div class="flex items-center border-b border-[#135DBB] py-2">
+                <input
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  type="text" placeholder="Loại vé" aria-label="Full name">
+
+              </div>
+              <div class="flex items-center border-b border-[#135DBB] py-2">
+
+                <input
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  type="text" placeholder="Số lượng vé" aria-label="Full name">
+
+              </div>
+            </div>
+            <div class="flex items-center border-b border-[#135DBB] py-2">
+              <input
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                type="text" placeholder="Lưu ý khác" aria-label="Full name">
+
+            </div>
+            <div class="flex items-center py-2">
+              <button
+                class="bg-transparent hover:bg-blue-500 text-[#135DBB] font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                Đặt lịch
+              </button>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <div class="blog">
+      <div>
+        <h2 class="heading">Feature blog</h2>
+      </div>
+      <div class="flex md:space-x-5 space-x-0 justify-between w-full">
+        <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out" data-aos-duration="700">
+          <img class="w-full" src="./blog1.png" alt="Sunset in the mountains">
+          <div class="md:px-6 py-4">
+            <div class=" mb-2 solution-title">Cẩm nang tránh nóng</div>
+          </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out" data-aos-duration="700">
+          <img class="w-full" src="./blog2.png" alt="Sunset in the mountains">
+          <div class="md:px-6 py-4">
+            <div class=" mb-2 solution-title">cảm xúc là một năm tiết trời</div>
+          </div>
+        </div>
+        <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out" data-aos-duration="700">
+          <img class="w-full" src="./blog3.png" alt="Sunset in the mountains">
+          <div class="md:px-6 py-4">
+            <div class=" mb-2 solution-title">ăn một giấc ngủ thật ngon!</div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="blog">
-    <div>
-      <h2 class="heading">Feature blog</h2>
-    </div>
-    <div class="flex md:space-x-5 space-x-0 justify-between">
-      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-right" data-aos-duration="500">
-        <img class="w-full" src="./blog1.png" alt="Sunset in the mountains">
-        <div class="md:px-6 py-4">
-          <div class=" mb-2 solution-title">Cẩm nang tránh nóng</div>
-        </div>
-      </div>
-      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-down" data-aos-duration="500">
-        <img class="w-full" src="./blog2.png" alt="Sunset in the mountains">
-        <div class="md:px-6 py-4">
-          <div class=" mb-2 solution-title">cảm xúc là một năm tiết trời</div>
-        </div>
-      </div>
-      <div class="max-w-sm rounded overflow-hidden " data-aos="zoom-out-left" data-aos-duration="500">
-        <img class="w-full" src="./blog3.png" alt="Sunset in the mountains">
-        <div class="md:px-6 py-4">
-          <div class=" mb-2 solution-title">ăn một giấc ngủ thật ngon!</div>
 
-        </div>
-      </div>
-    </div>
-  </div>
   <hr class="line">
   <footer>
     <div class="flex justify-around mb-10">
@@ -376,9 +440,7 @@
       </div>
     </div>
   </footer>
-  <div class="fixed top-[30%] right-[15%]"><img src="./button-down.png" alt="" class="w-full h-full object-cover">
-    <img src="./Arrow-down.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[75%] down"></img>
-  </div>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
