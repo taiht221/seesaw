@@ -33,4 +33,8 @@ $(document).ready(function () {
     $('.menu-right').toggleClass('active')
     $('#banner-input').toggleClass('active')
   })
+  // $(".solution-card").hover(function () {
+  //   $(".solution-card p").css("color", "red");
+  //   // $(this).fadeIn(500);
+  // });
 })
