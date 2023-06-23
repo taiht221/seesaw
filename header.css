@@ -54,7 +54,7 @@ li {
 .header.active {
   transition: all 0.2s linear;
   margin-top: 0;
-  background-color: white;
+  background-color: #fbf7ea;
 }
 .header__mobile {
   display: none;

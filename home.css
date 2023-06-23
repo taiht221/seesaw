@@ -39,11 +39,14 @@ body {
   background: #ffffff;
   border-radius: 30px;
   height: 100%;
+  transition: all 0.3s ease-out;
 }
 .solution-card:hover h3 {
+  transition: all 0.3s ease-in;
   color: #ff5dc8 !important;
 }
 .solution-card:hover p {
+  transition: all 0.3s ease-in;
   color: #ff5dc8 !important;
 }
 .solution-title {
