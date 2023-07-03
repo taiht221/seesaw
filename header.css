@@ -1,9 +1,8 @@
 .header {
-  transition: all 0.2s linear;
   background-color: transparent;
-  position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 51;
+  position: relative;
 }
 .header .logo a {
   width: 45px;
@@ -52,7 +51,7 @@ li {
   width: 20%;
 }
 .header.active {
-  transition: all 0.2s linear;
+  position: fixed;
   margin-top: 0;
   background-color: #fbf7ea;
 }
