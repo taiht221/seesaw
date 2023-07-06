@@ -416,3 +416,34 @@ footer {
   font-weight: 500;
   text-shadow: 1px 0px black;
 }
+
+.shop-card {
+  width: calc(100% / 3);
+  max-width: 372px;
+  margin-bottom: 20px;
+}
+.shop-line {
+  margin: 15px 0;
+  border: 1px solid #135dbb;
+}
+.shop-card-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #135dbb;
+}
+.shop-card-buy {
+  display: flex;
+  color: #ff5dc8;
+  text-transform: uppercase;
+}
+.shopSwiper h3 {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #135dbb;
+}

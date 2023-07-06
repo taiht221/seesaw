@@ -37,4 +37,10 @@ $(document).ready(function () {
   //   $(".solution-card p").css("color", "red");
   //   // $(this).fadeIn(500);
   // });
+  var swiper = new Swiper(".shopSwiper", {
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+  });
 })
