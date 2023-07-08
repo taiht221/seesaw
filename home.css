@@ -439,11 +439,29 @@ footer {
   color: #ff5dc8;
   text-transform: uppercase;
 }
-.shopSwiper h3 {
+.shopSwiper-desc h3 {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   text-transform: uppercase;
   color: #135dbb;
+}
+.shopSwiper-desc {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #135dbb;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shopSwiper .swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  right: 0;
+  bottom: 10px;
+  opacity: 1;
 }
