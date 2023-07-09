@@ -465,3 +465,88 @@ footer {
   bottom: 10px;
   opacity: 1;
 }
+.describe-text h1 {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.describe-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  color: #135dbb;
+}
+.describe-text ul {
+  list-style-type: none;
+  color: #135dbb;
+  font-weight: 500;
+}
+.describe-text ul li {
+  margin-bottom: 2px;
+}
+.describe-text ul li:before {
+  color: #135dbb;
+  content: '-  ';
+}
+.describe-text .describe-text-right ul {
+  padding-left: 3%;
+}
+.describe-text .describe-text-right ul li {
+  list-style-type: disc;
+}
+.describe-text .describe-text-right ul li:before {
+  content: '';
+}
+.feedback-title,
+.similar-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  color: #135dbb;
+}
+.feedback-slide .swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  top: unset;
+  bottom: 0;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #135dbb;
+}
+.feedback-card {
+  margin-bottom: 20px;
+}
+.similar-slide .swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  top: unset;
+  bottom: 0;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #135dbb;
+}
+.similar-card {
+  margin-bottom: 20px;
+}
+.similar-card-title {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #135dbb;
+}

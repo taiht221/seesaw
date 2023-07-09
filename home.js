@@ -14,14 +14,10 @@ $(document).ready(function () {
     if (idInput == 10) idInput = 0
   })
   function menuTop() {
-    if (window.location.pathname === '/' && window.location.search === '') {
-      if ($(this).scrollTop() >= 200) {
-        $('.header').addClass('active')
-      } else {
-        $('.header').removeClass('active')
-      }
-    } else {
+    if ($(this).scrollTop() >= 300) {
       $('.header').addClass('active')
+    } else {
+      $('.header').removeClass('active')
     }
   }
   menuTop()
@@ -75,5 +71,25 @@ $(document).ready(function () {
         dragSize: dragSize,
       },
     })
+  })
+  var swiper = new Swiper('.feedback-slide', {
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: false,
+    slidesPerGroup: 3,
+    slidesPerView: 3,
+  })
+  var swiper = new Swiper('.similar-slide', {
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: false,
+    slidesPerGroup: 3,
+    slidesPerView: 3,
   })
 })
