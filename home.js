@@ -31,47 +31,47 @@ $(document).ready(function () {
   //   $(".solution-card p").css("color", "red");
   //   // $(this).fadeIn(500);
   // });
-  var $swiperSelector = $('.shopSwiper')
+  // var $swiperSelector = $('.shopSwiper')
 
-  $swiperSelector.each(function (index) {
-    var $this = $(this)
-    $this.addClass('swiper-slider-' + index)
+  // $swiperSelector.each(function (index) {
+  //   var $this = $(this)
+  //   $this.addClass('swiper-slider-' + index)
 
-    var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50
-    var freeMode = $this.data('free-mode') ? $this.data('free-mode') : false
-    var loop = $this.data('loop') ? $this.data('loop') : false
-    var slidesDesktop = $this.data('slides-desktop') ? $this.data('slides-desktop') : 4
-    var slidesTablet = $this.data('slides-tablet') ? $this.data('slides-tablet') : 3
-    var slidesMobile = $this.data('slides-mobile') ? $this.data('slides-mobile') : 2.5
-    var spaceBetween = $this.data('space-between') ? $this.data('space-between') : 20
+  //   var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50
+  //   var freeMode = $this.data('free-mode') ? $this.data('free-mode') : false
+  //   var loop = $this.data('loop') ? $this.data('loop') : false
+  //   var slidesDesktop = $this.data('slides-desktop') ? $this.data('slides-desktop') : 4
+  //   var slidesTablet = $this.data('slides-tablet') ? $this.data('slides-tablet') : 3
+  //   var slidesMobile = $this.data('slides-mobile') ? $this.data('slides-mobile') : 2.5
+  //   var spaceBetween = $this.data('space-between') ? $this.data('space-between') : 20
 
-    var swiper = new Swiper('.swiper-slider-' + index, {
-      direction: 'horizontal',
-      loop: loop,
-      freeMode: freeMode,
-      spaceBetween: spaceBetween,
-      breakpoints: {
-        1920: {
-          slidesPerView: slidesDesktop,
-        },
-        992: {
-          slidesPerView: slidesTablet,
-        },
-        320: {
-          slidesPerView: slidesMobile,
-        },
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        dragSize: dragSize,
-      },
-    })
-  })
+  //   var swiper = new Swiper('.swiper-slider-' + index, {
+  //     direction: 'horizontal',
+  //     loop: loop,
+  //     freeMode: freeMode,
+  //     spaceBetween: spaceBetween,
+  //     breakpoints: {
+  //       1920: {
+  //         slidesPerView: slidesDesktop,
+  //       },
+  //       992: {
+  //         slidesPerView: slidesTablet,
+  //       },
+  //       320: {
+  //         slidesPerView: slidesMobile,
+  //       },
+  //     },
+  //     navigation: {
+  //       nextEl: '.swiper-button-next',
+  //       prevEl: '.swiper-button-prev',
+  //     },
+  //     scrollbar: {
+  //       el: '.swiper-scrollbar',
+  //       draggable: true,
+  //       dragSize: dragSize,
+  //     },
+  //   })
+  // })
   var swiper = new Swiper('.feedback-slide', {
     spaceBetween: 20,
     pagination: {
@@ -81,6 +81,14 @@ $(document).ready(function () {
     navigation: false,
     slidesPerGroup: 3,
     slidesPerView: 3,
+  })
+  var swiper = new Swiper('.shopSwiper', {
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: false,
   })
   var swiper = new Swiper('.similar-slide', {
     spaceBetween: 20,
