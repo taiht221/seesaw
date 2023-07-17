@@ -9,6 +9,7 @@ module.exports = defineConfig({
         about: resolve(__dirname, 'about.html'),
         shop: resolve(__dirname, 'shop.html'),
         details: resolve(__dirname, 'details.html'),
+        booking: resolve(__dirname, 'booking.html'),
       },
     },
   },
