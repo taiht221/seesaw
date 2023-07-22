@@ -33,7 +33,6 @@ body {
   line-height: 18px;
   /* identical to box height */
 
-  text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -121,7 +120,7 @@ body {
   font-size: 32px;
   line-height: 40px;
   text-transform: uppercase;
-
+  margin-bottom: 16px;
   color: #135dbb;
 }
 .footer-desc {
@@ -130,7 +129,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-
+  margin-bottom: 16px;
   color: #135dbb;
 }
 
@@ -420,11 +419,12 @@ footer {
 .shop-card {
   width: calc(100% / 3);
   max-width: 372px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .shop-line {
   margin: 15px 0;
-  border: 1px solid #135dbb;
+  background-color: #135dbb;
+  height: 1px;
 }
 .shop-card-title {
   font-family: 'Livvic';
@@ -446,6 +446,7 @@ footer {
   font-size: 36px;
   text-transform: uppercase;
   color: #135dbb;
+  margin-bottom: 24px;
 }
 .shopSwiper-desc {
   font-family: 'Livvic';
@@ -453,7 +454,6 @@ footer {
   font-weight: 400;
   font-size: 16px;
   color: #135dbb;
-  padding: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -480,8 +480,8 @@ footer {
   font-size: 40px;
   line-height: 45px;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
   color: #135dbb;
+  margin-bottom: 40px;
 }
 .describe-text ul {
   list-style-type: none;
@@ -491,12 +491,14 @@ footer {
 .describe-text ul li {
   margin-bottom: 2px;
 }
-.describe-text ul li:before {
-  color: #135dbb;
-  content: '-  ';
-}
 .describe-text .describe-text-right ul {
   padding-left: 3%;
+}
+.describe-text ul li {
+  list-style-type: disc;
+}
+.describe-text .describe-text-left ul {
+  padding-left: 6%;
 }
 .describe-text .describe-text-right ul li {
   list-style-type: disc;
@@ -512,8 +514,8 @@ footer {
   font-size: 40px;
   line-height: 45px;
   text-transform: uppercase;
-  margin-bottom: 2.5rem;
   color: #135dbb;
+  margin-bottom: 40px;
 }
 .feedback-slide .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal,
@@ -526,7 +528,7 @@ footer {
   background-color: #135dbb;
 }
 .feedback-card {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .similar-slide .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal,
@@ -534,12 +536,18 @@ footer {
 .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   top: unset;
   bottom: 0;
+  height: 1.5px;
+  margin-top: 30px;
 }
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #135dbb;
 }
+.swiper-pagination-progressbar {
+  height: 1.5px;
+  margin-top: 10px;
+}
 .similar-card {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .similar-card-title {
   font-family: 'Livvic';
@@ -554,6 +562,12 @@ footer {
 .shopSwiper .swiper-pagination-progressbar {
   bottom: 50px;
   width: 30%;
+  right: 20%;
+  left: unset;
+}
+.bookSwiper .swiper-pagination-progressbar {
+  bottom: 50px;
+  width: 30%;
   right: 15%;
   left: unset;
 }
@@ -563,8 +577,6 @@ footer {
   left: unset;
   right: 50px;
   color: #ff5dc8;
-  width: 5px;
-  height: 5px;
   font-size: 5px;
 }
 .shopSwiper .swiper-button-next {
@@ -573,7 +585,69 @@ footer {
   left: unset;
   right: 20px;
   color: #ff5dc8;
-  width: 5px;
-  height: 5px;
   font-size: 5px;
+}
+
+.shopSwiper .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: unset;
+  content: '';
+}
+.bookSwiper .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: unset;
+  content: '';
+}
+.bookSwiper .swiper-button-prev {
+  top: unset;
+  bottom: 30px;
+  left: unset;
+  right: 100px;
+  color: #ff5dc8;
+}
+.bookSwiper .swiper-button-next {
+  top: unset;
+  bottom: 30px;
+  left: unset;
+  right: 70px;
+  color: #ff5dc8;
+}
+.bookSwiper2 .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: unset;
+  content: '';
+}
+.bookSwiper2 .swiper-button-prev {
+  top: unset;
+  bottom: 30px;
+  right: unset;
+  left: 70px;
+  color: #ff5dc8;
+}
+.bookSwiper2 .swiper-button-next {
+  top: unset;
+  bottom: 30px;
+  right: unset;
+  left: 100px;
+  color: #ff5dc8;
+}
+.bookSwiper2 .swiper-pagination-progressbar {
+  bottom: 50px;
+  width: 30%;
+  left: 15%;
+  right: unset;
+}
+.shopSwiper .swiper-button-prev {
+  top: unset;
+  bottom: 30px;
+  left: unset;
+  right: 100px;
+  color: #ff5dc8;
+}
+.shopSwiper .swiper-button-next {
+  top: unset;
+  bottom: 30px;
+  left: unset;
+  right: 70px;
+  color: #ff5dc8;
 }

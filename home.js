@@ -82,7 +82,8 @@ $(document).ready(function () {
     slidesPerGroup: 3,
     slidesPerView: 3,
   })
-  var swiper = new Swiper('.shopSwiper', {
+  var paginationElement2 = $(".shopSwiper .swiper-pagination");
+  var swiper2 = new Swiper('.shopSwiper', {
     pagination: {
       el: '.swiper-pagination',
       type: 'progressbar',
@@ -92,6 +93,52 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   })
+  swiper2.on("slideChange", function () {
+    paginationElement2.hide();
+    setTimeout(function () {
+      paginationElement2.show();
+    }, 200);
+  });
+  var paginationElement = $(".bookSwiper .swiper-pagination");
+  var swiper3 = new Swiper('.bookSwiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
+  swiper3.on("slideChange", function () {
+    paginationElement3.hide();
+    setTimeout(function () {
+      paginationElement3.show();
+    }, 200);
+  });
+  var paginationElement = $(".bookSwiper2 .swiper-pagination");
+  var swiper4 = new Swiper('.bookSwiper2', {
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+  // When the slide changes, hide the pagination.
+  swiper4.on("slideChange", function () {
+    paginationElement.hide();
+    setTimeout(function () {
+      paginationElement.show();
+    }, 200);
+  });
+
+  // After 1 second, show the pagination.
+
+
   var swiper = new Swiper('.similar-slide', {
     spaceBetween: 20,
     pagination: {
