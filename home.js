@@ -83,12 +83,14 @@ $(document).ready(function () {
     slidesPerView: 3,
   })
   var swiper = new Swiper('.shopSwiper', {
-    spaceBetween: 20,
     pagination: {
       el: '.swiper-pagination',
       type: 'progressbar',
     },
-    navigation: false,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   })
   var swiper = new Swiper('.similar-slide', {
     spaceBetween: 20,
@@ -99,5 +101,13 @@ $(document).ready(function () {
     navigation: false,
     slidesPerGroup: 3,
     slidesPerView: 3,
+  })
+  var img;
+
+  $('.game-card img').hover(function () {
+    img = $(this);
+    img.attr("src", img.attr('data-gd'));
+  }, function () {
+    img.attr("src", img.attr('data-orig'));
   })
 })

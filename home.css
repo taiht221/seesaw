@@ -550,3 +550,30 @@ footer {
   margin-bottom: 1rem;
   color: #135dbb;
 }
+
+.shopSwiper .swiper-pagination-progressbar {
+  bottom: 50px;
+  width: 30%;
+  right: 15%;
+  left: unset;
+}
+.shopSwiper .swiper-button-prev {
+  top: unset;
+  bottom: 50px;
+  left: unset;
+  right: 50px;
+  color: #ff5dc8;
+  width: 5px;
+  height: 5px;
+  font-size: 5px;
+}
+.shopSwiper .swiper-button-next {
+  top: unset;
+  bottom: 50px;
+  left: unset;
+  right: 20px;
+  color: #ff5dc8;
+  width: 5px;
+  height: 5px;
+  font-size: 5px;
+}
