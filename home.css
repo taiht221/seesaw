@@ -651,3 +651,33 @@ footer {
   right: 70px;
   color: #ff5dc8;
 }
+.blog-title {
+  height: calc(100% - 1.25rem);
+  width: calc(100% - 35%);
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+.blog-title.active {
+  transform: translate(-100%, 0);
+  visibility: hidden;
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.blog-title.active.visible {
+  transform: translate(100%, 0);
+  visibility: visible;
+  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+.blog-title-text {
+  color: #fff;
+  font-family: Livvic;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 70%;
+  display: block;
+  padding-left: 64px;
+  padding-bottom: 82px;
+}
