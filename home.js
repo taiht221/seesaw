@@ -161,11 +161,6 @@ $(document).ready(function () {
   $('.blog-topic').hover(
     function () {
       $('.blog-title', this).addClass('active')
-      $('.blog-title', this).removeClass('visible')
-    },
-    function () {
-      $('.blog-title', this).removeClass('active')
-      $('.blog-title', this).addClass('visible')
     }
   )
 })

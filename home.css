@@ -663,11 +663,6 @@ footer {
   visibility: hidden;
   transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-.blog-title.active.visible {
-  transform: translate(100%, 0);
-  visibility: visible;
-  transition: transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
 .blog-title-text {
   color: #fff;
   font-family: Livvic;

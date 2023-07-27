@@ -11,6 +11,7 @@ module.exports = defineConfig({
         details: resolve(__dirname, 'details.html'),
         booking: resolve(__dirname, 'booking.html'),
         blog: resolve(__dirname, 'blog.html'),
+        blogDetail: resolve(__dirname, 'blog-detail.html'),
       },
     },
   },
