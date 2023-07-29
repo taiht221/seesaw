@@ -676,9 +676,16 @@ footer {
   padding-left: 64px;
   padding-bottom: 82px;
 }
+.blog-author span {
+  font-family: Livvic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
 .blog-author span:first-child {
   color: #ff5dc8;
   margin-right: 5px;
+  font-weight: bold;
 }
 .blog-author span:last-child {
   color: #135dbb;
