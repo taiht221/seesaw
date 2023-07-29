@@ -161,6 +161,11 @@ $(document).ready(function () {
   $('.blog-topic').hover(
     function () {
       $('.blog-title', this).addClass('active')
+      $('.blog-title', this).removeClass('visible')
+    },
+    function () {
+      $('.blog-title', this).removeClass('active')
+      $('.blog-title', this).addClass('visible')
     }
   )
   var swiper = new Swiper(".blogDetailSwiper", {
@@ -172,7 +177,8 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       type: 'progressbar',
     },
-    autoplay: true
+    autoplay: true,
+    grabCursor: true
 
   });
 })
