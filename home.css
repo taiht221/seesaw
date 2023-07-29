@@ -676,3 +676,31 @@ footer {
   padding-left: 64px;
   padding-bottom: 82px;
 }
+.blog-author span:first-child {
+  color: #ff5dc8;
+  margin-right: 5px;
+}
+.blog-author span:last-child {
+  color: #135dbb;
+}
+.blog-intro {
+  padding-top: 80px;
+}
+.blog-intro .similar-title {
+  margin-bottom: 24px;
+}
+.blogDetailSwiper .swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+  top: unset;
+  /* bottom: 0px; */
+  height: 1.5px;
+  /* width: 80%; */
+}
+.blogDetailSwiper .swiper-slide {
+  opacity: 0.5;
+}
+.blogDetailSwiper .swiper-slide-active {
+  opacity: 1;
+}

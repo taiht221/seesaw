@@ -163,4 +163,16 @@ $(document).ready(function () {
       $('.blog-title', this).addClass('active')
     }
   )
+  var swiper = new Swiper(".blogDetailSwiper", {
+    slidesPerView: 2.2,
+    spaceBetween: 30,
+    centeredSlides: true,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar',
+    },
+    autoplay: true
+
+  });
 })
