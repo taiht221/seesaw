@@ -167,7 +167,7 @@ $(document).ready(function () {
     slidesPerView: 2.2,
     spaceBetween: 30,
     centeredSlides: true,
-    freeMode: true,
+    freeMode: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'progressbar',
