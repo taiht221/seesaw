@@ -158,7 +158,7 @@ $(document).ready(function () {
       img.attr('src', img.attr('data-orig'))
     }
   )
-  $('.blog-topic').hover(
+  $('.knowledge').hover(
     function () {
       $('.blog-title', this).addClass('active')
       $('.blog-title', this).removeClass('visible')
