@@ -753,23 +753,14 @@ footer {
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 3s linear infinite;
 }
 
-@keyframes primary {
-  from {
-    left: 0%;
-  }
-  to {
-    left: -100%;
-  }
-}
 .primary {
-  animation: primary 3s linear infinite;
+  animation: primary 5s linear infinite;
 }
 
 .secondary {
-  animation: secondary 3s linear infinite;
+  animation: secondary 5s linear infinite;
 }
 
 @keyframes primary {
