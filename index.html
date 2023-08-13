@@ -97,7 +97,7 @@
         <div class="px-10 flex justify-around mt-auto">
           <div class="md:w-[180px] md:h-[180px] bg-center bg-cover bg-no-repeat md:p-8 p-4 note-list"
             style="background-image: url('./note1.png');">
-            <p class="note-text">
+            <p class="note-text break-words overflow-hidden ">
               Hôm nay là một ngày thật đẹp
             </p>
           </div>
@@ -207,12 +207,15 @@
           <img src="./intro1.jpg" alt="" class="w-full h-full rounded-l-xl">
 
         </div>
-        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl">
+        <div
+          class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl relative overflow-hidden g-hover">
           <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
           <p class="intro-content mb-8">
             Bộ bài trò chuyện và nhập vai, giúp người chơi chia sẻ về những sự kiện xảy ra trong tuần qua của mình thông
             qua các câu hỏi gợi ý sáng tạo và sâu sắc.
           </p>
+          <img src="./g-hover-left.png" class="absolute left-0 bottom-0 w-1/4 h-1/4 object-full " alt="">
+          <img src="./g-hover-r.png" class="absolute -right-0 -top-12  z-0 " alt="">
         </div>
         <a href="/details.html">
           <img src="./Arrowright.svg" alt="" class="w-[25px] h-[25px] absolute bottom-10 right-10">
@@ -224,31 +227,37 @@
           <img src="./intro2.png" alt="" class="w-full h-full rounded-l-xl">
 
         </div>
-        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl">
+        <div
+          class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl relative overflow-hidden g-hover">
           <h3 class="intro-title mb-4">SỔ NHẬT KÝ VẼ MÙA HÈ TRÒN TRĨNH</h3>
           <p class="intro-content mb-8">
             Quyển sổ với chủ đề đi tìm hạnh phúc qua 84 gợi ý minh họa, giúp người chơi tìm được hạnh phúc ẩn giấu ở
             khắp
             nơi trong cuộc sống của chúng mình thông qua việc tìm câu trả lời cho các gợi ý.
           </p>
+          <img src="./g-hover-left.png" class="absolute left-0 bottom-0 w-1/4 h-1/4 object-full " alt="">
+          <img src="./g-hover-r.png" class="absolute -right-0 -top-12  z-0 " alt="">
         </div>
         <a href="/details.html">
           <img src="./Arrowright.svg" alt="" class="w-[25px] h-[25px] absolute bottom-10 right-10">
         </a>
       </div>
-      <div class="intro-card flex justify-stretch items-center  md:h-[80vh]" data-aos="zoom-out"
+      <div class="intro-card flex justify-stretch items-center  md:h-[70vh]" data-aos="zoom-out"
         data-aos-duration="700">
         <div class="w-1/2 h-full ">
           <img src="./intro3.png" alt="" class="w-full h-full rounded-l-xl">
 
         </div>
-        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl">
+        <div
+          class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl relative overflow-hidden g-hover">
           <h3 class="intro-title mb-4">POSTCARD THÔNG ĐIỆP TỪ MÙA HÈ TRÒN TRĨNH</h3>
           <p class="intro-content mb-8">
             6 mẫu postcard với nhiều thông điệp dễ thương, nhắc nhở rằng mỗi chúng mình đều có những giá trị và vẻ
             đẹp
             riêng, và mỗi chúng mình là duy nhất!
           </p>
+          <img src="./g-hover-left.png" class="absolute left-0 bottom-0 w-1/4 h-1/4 object-full " alt="">
+          <img src="./g-hover-r.png" class="absolute -right-0 -top-12  z-0 " alt="">
         </div>
         <a href="/details.html">
           <img src="./Arrowright.svg" alt="" class="w-[25px] h-[25px] absolute bottom-10 right-10">
@@ -259,59 +268,59 @@
       <div>
         <h2 class="heading">book lịch tại tiệm bập bênh </h2>
       </div>
-      <div class="intro-card flex justify-stretch items-center  h-[60vh] mb-5" data-aos="zoom-out"
+      <div class="intro-card flex justify-stretch items-center h-[60vh] mb-5" data-aos="zoom-out"
         data-aos-duration="700">
-        <div class="w-1/2 h-full ">
-          <img src="./book.png" alt="" class="w-full h-full object-cover">
+        <div class="w-1/2 h-full flex justify-center items-center bg-white rounded-l-xl">
+          <img src="./book.png" alt="" class="w-3/4 h-3/4 object-contain">
 
         </div>
-        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px]">
+        <div class="bg-white h-full w-1/2 flex md:flex-col justify-center items-center p-[50px] rounded-r-xl">
           <form class="w-full max-w-sm">
-            <div class="flex items-center border-b border-[#135DBB] py-2">
+            <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
               <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                 type="text" placeholder="Tên của bạn" aria-label="Full name">
 
             </div>
             <div class="flex space-x-3">
-              <div class="flex items-center border-b border-[#135DBB] py-2">
+              <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
                 <input
-                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                   type="text" placeholder="Ngày muốn đặt" aria-label="Full name">
 
               </div>
-              <div class="flex items-center border-b border-[#135DBB] py-2">
+              <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
 
                 <input
-                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                   type="text" placeholder="Thời gian đến tiệm" aria-label="Full name">
 
               </div>
             </div>
-            <div class="flex items-center border-b border-[#135DBB] py-2">
+            <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
               <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                 type="text" placeholder="Số điện thoại" aria-label="Full name">
 
             </div>
             <div class="flex space-x-3">
-              <div class="flex items-center border-b border-[#135DBB] py-2">
+              <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
                 <input
-                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                   type="text" placeholder="Loại vé" aria-label="Full name">
 
               </div>
-              <div class="flex items-center border-b border-[#135DBB] py-2">
+              <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
 
                 <input
-                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                  class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                   type="text" placeholder="Số lượng vé" aria-label="Full name">
 
               </div>
             </div>
-            <div class="flex items-center border-b border-[#135DBB] py-2">
+            <div class="flex items-center border-b border-[#135DBB] py-2 hover:border-[red]">
               <input
-                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none"
+                class="appearance-none bg-transparent border-none w-full text-[#135DBB] mr-3 py-1 px-2 leading-tight focus:outline-none focus:text-red-500"
                 type="text" placeholder="Lưu ý khác" aria-label="Full name">
 
             </div>
@@ -382,7 +391,7 @@
           chương trình
           tương tác & kết nối cho Seesaw tổ chức bạn nhé!
         </p>
-        <div class="flex items-center border-b border-[#135DBB] py-2 w-full">
+        <div class="flex items-center border-b border-[#135DBB] py-2 w-full hover:border-[red]">
           <input
             class="appearance-none bg-transparent border-none w-full text-[#135DBB] py-1  leading-tight focus:outline-none"
             type="text" placeholder="Email" aria-label="Full name">
