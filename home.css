@@ -817,3 +817,34 @@ input::-ms-input-placeholder :hover {
   opacity: 0.5;
   transition: opacity 0.4s ease;
 }
+.game-card-small {
+  width: calc(100% / 4);
+  margin-bottom: 90px;
+}
+.game-card-small img {
+  width: 101px;
+  height: 90px;
+  margin-bottom: 24px;
+}
+.game-card-small p {
+  color: #ff5dc8;
+  font-family: Livvic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.place-card {
+  width: calc(100% / 3);
+}
+.place-card img {
+  margin-bottom: 24px;
+}
+.place-card ul li {
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}

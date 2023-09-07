@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body class="md:pt-0 ">
@@ -84,212 +85,103 @@
 
     </header>
     <div class="homepage max-w-screen-xl px-[15px]  mx-auto  ">
-        <div class="relative bg-[#fbf7ea] mb-10 md:h-[60vh] h-[30vh] bg-center bg-cover bg-no-repeat md:mt-0 banner-top rounded-xl"
+        <div class="relative bg-[#fbf7ea] md:mb-[90px] md:h-[600px] h-[30vh] bg-center bg-cover bg-no-repeat md:mt-0 banner-top rounded-xl"
             style="background-image: url('./booking_banner.png');">
             <!-- <img src="./home_banner.png" alt="" class="w-full h-full object-cover rounded-lg"> -->
         </div>
 
         <div class="mb-6">
-            <div>
-                <h2 class="heading">Các trò chơi</h2>
+            <div class="flex flex-wrap">
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
+                <div class="game-card-small">
+                    <img src="./game.png" alt="" data-tooltip-target="tooltip-pink">
+                    <p>Trò chuyện trong tuần</p>
+                    <div id="tooltip-pink" role="tooltip"
+                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-[#FF5DC8] rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700 w-1/3">
+                        Bộ bài dành cho nhóm người bạn thích kể chuyện, chia sẻ những câu chuyện của mình với mọi người.
+                        Hãy mở lòng ra với nhau và lắng nghe nhau nhiều hơn.
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper bookSwiper ">
 
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-
-                            <div class="w-1/2 transition-[800ms]">
-                                <img src="./game1.png" alt=""
-                                    class="h-full w-full object-cover rounded-l-2xl transition-[800ms]">
-                            </div>
-                            <div class="w-1/2">
-                                <div
-                                    class="rounded-r-2xl bg-white h-full flex md:flex-col justify-center items-center p-[50px]">
-                                    <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
-                                    <p class="intro-content mb-8">
-                                    <ul>
-                                        <li class="intro-content list-disc">
-                                            Là một bộ boardgame trò chuyện để mọi người nhìn lại những sự kiện trong 1
-                                            tuần của
-                                            mình.
-                                        </li>
-                                        <li class="intro-content list-disc">
-                                            Gồm những câu hỏi ẩn dụ, khác biệt so với những bài boardgame trò chuyện
-                                            khác, yêu cầu
-                                            bạn phải suy nghĩ sâu sắc hơn để tìm ra câu trả lời phù hợp nhất và khiến
-                                            bạn cảm thấy
-                                            thoải mái khi trả lời nhất.
-
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-
-                            <div class="w-1/2 ">
-                                <img src="./game1.png" alt="" class="h-full w-full object-cover rounded-l-2xl">
-                            </div>
-                            <div class="w-1/2">
-                                <div
-                                    class="rounded-r-2xl bg-white h-full flex md:flex-col justify-center items-center p-[50px]">
-                                    <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
-                                    <p class="intro-content mb-8">
-                                    <ul>
-                                        <li class="intro-content list-disc">
-                                            Là một bộ boardgame trò chuyện để mọi người nhìn lại những sự kiện trong 1
-                                            tuần của
-                                            mình.
-                                        </li>
-                                        <li class="intro-content list-disc">
-                                            Gồm những câu hỏi ẩn dụ, khác biệt so với những bài boardgame trò chuyện
-                                            khác, yêu cầu
-                                            bạn phải suy nghĩ sâu sắc hơn để tìm ra câu trả lời phù hợp nhất và khiến
-                                            bạn cảm thấy
-                                            thoải mái khi trả lời nhất.
-
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-
-                            <div class="w-1/2 ">
-                                <img src="./game1.png" alt="" class="h-full w-full object-cover rounded-l-2xl">
-                            </div>
-                            <div class="w-1/2">
-                                <div
-                                    class="rounded-r-2xl bg-white h-full flex md:flex-col justify-center items-center p-[50px]">
-                                    <h3 class="intro-title mb-4">BỘ BOARDGAME TRÒ CHUYỆN TRONG TUẦN</h3>
-                                    <p class="intro-content mb-8">
-                                    <ul>
-                                        <li class="intro-content list-disc">
-                                            Là một bộ boardgame trò chuyện để mọi người nhìn lại những sự kiện trong 1
-                                            tuần của
-                                            mình.
-                                        </li>
-                                        <li class="intro-content list-disc">
-                                            Gồm những câu hỏi ẩn dụ, khác biệt so với những bài boardgame trò chuyện
-                                            khác, yêu cầu
-                                            bạn phải suy nghĩ sâu sắc hơn để tìm ra câu trả lời phù hợp nhất và khiến
-                                            bạn cảm thấy
-                                            thoải mái khi trả lời nhất.
-
-                                        </li>
-                                    </ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- buttons -->
-                <div class="swiper-button-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-[#FF5DC8]">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                    </svg>
-
-                </div>
-                <div class="swiper-button-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-[#FF5DC8]">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
 
 
 
         </div>
         <div class="mb-6">
-            <div class="swiper bookSwiper2 ">
-
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-                            <div class="w-1/2 order-2">
-                                <img src="./game2.png" alt="" class="h-full w-full object-cover rounded-r-2xl">
-                            </div>
-                            <div class="w-1/2">
-                                <div class="bg-white h-full flex md:flex-col justify-center items-center p-[50px]
-                                rounded-l-2xl">
-                                    <h3 class="intro-title mb-4">Trang trí khung tranh canvas</h3>
-                                    <p class="intro-content mb-8">
-                                        Bạn có thể chọn vẽ màu hoặc nặn đất sét lên khung tranh canvas 15x15 cm. Ngoài
-                                        ra, bạn cũng
-                                        sẽ được cung cấp nhiều loại nguyên liệu phụ khác để trang trí lên tranh.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            <div>
+                <h2 class="heading">thời gian và địa điểm mở cửa</h2>
+                <div class="flex space-x-8">
+                    <div class="place-card">
+                        <img src="./clock.svg" alt="">
+                        <ul>
+                            <li>
+                                Giấy mỹ thuật
+                            </li>
+                            <li>kích thước phiên bản chính: B5, 17,6x25 cm</li>
+                            <li>kích thước phiên bản nhỏ (trong tuần): A5, 14,8x21 cm</li>
+                        </ul>
                     </div>
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-                            <div class="w-1/2 order-2">
-                                <img src="./game2.png" alt="" class="h-full w-full object-cover rounded-r-2xl">
-                            </div>
-                            <div class="w-1/2">
-                                <div class="bg-white h-full flex md:flex-col justify-center items-center p-[50px]
-                                rounded-l-2xl">
-                                    <h3 class="intro-title mb-4">Trang trí khung tranh canvas</h3>
-                                    <p class="intro-content mb-8">
-                                        Bạn có thể chọn vẽ màu hoặc nặn đất sét lên khung tranh canvas 15x15 cm. Ngoài
-                                        ra, bạn cũng
-                                        sẽ được cung cấp nhiều loại nguyên liệu phụ khác để trang trí lên tranh.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="place-card">
+                        <img src="./place.svg" alt="">
+                        <ul>
+                            <li>
+                                Căn Hộ K205, Chung Cư Docklands, Đường số 1, Tân Phú, Quận 7, Ho Chi Minh City
+                            </li>
+                        </ul>
                     </div>
-                    <div class="swiper-slide flex justify-between">
-                        <div class="flex">
-                            <div class="w-1/2 order-2">
-                                <img src="./game2.png" alt="" class="h-full w-full object-cover rounded-r-2xl">
-                            </div>
-                            <div class="w-1/2">
-                                <div class="bg-white h-full flex md:flex-col justify-center items-center p-[50px]
-                                rounded-l-2xl">
-                                    <h3 class="intro-title mb-4">Trang trí khung tranh canvas</h3>
-                                    <p class="intro-content mb-8">
-                                        Bạn có thể chọn vẽ màu hoặc nặn đất sét lên khung tranh canvas 15x15 cm. Ngoài
-                                        ra, bạn cũng
-                                        sẽ được cung cấp nhiều loại nguyên liệu phụ khác để trang trí lên tranh.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
 
-                </div>
-                <!-- buttons -->
-                <div class="swiper-button-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-[#FF5DC8]">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                    </svg>
-
-                </div>
-                <div class="swiper-button-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6 text-[#FF5DC8]">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>
-                </div>
-                <div class="swiper-pagination"></div>
             </div>
 
         </div>
@@ -458,7 +350,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
