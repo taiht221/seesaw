@@ -872,7 +872,6 @@ input::-ms-input-placeholder :hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(./home-ele.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
