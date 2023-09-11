@@ -690,15 +690,17 @@ input::-ms-input-placeholder :hover {
 .blog-title-text {
   color: #fff;
   font-family: Livvic;
-  font-size: 140px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
-  width: 70%;
   display: block;
-  padding-left: 64px;
-  padding-bottom: 82px;
+  padding-left: 24px;
+  padding-bottom: 21px;
+  letter-spacing: 0.96px;
+  bottom: 0;
+  position: absolute;
 }
 .blog-author span {
   font-family: Livvic;
@@ -847,4 +849,40 @@ input::-ms-input-placeholder :hover {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+.homebaner {
+  display: flex;
+  justify-content: space-between;
+}
+.homebanner-card {
+  border-radius: 15px;
+  width: 350px;
+  height: 395px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.homebanner-card:hover p {
+  display: none;
+}
+.homebanner-card-effect {
+  display: none;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./home-ele.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff5dc8;
+  opacity: 0.7;
+}
+.homebanner-card:hover .homebanner-card-effect {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.homebanner-card:hover {
+  width: 100%;
 }
