@@ -853,6 +853,7 @@ input::-ms-input-placeholder :hover {
 .homebaner {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 130px;
 }
 .homebanner-card {
   border-radius: 15px;
@@ -884,4 +885,9 @@ input::-ms-input-placeholder :hover {
 }
 .homebanner-card:hover {
   width: 100%;
+}
+.special-card {
+  width: calc(100% / 3);
+  height: 100%;
+  transition: all 0.3s ease-out;
 }
