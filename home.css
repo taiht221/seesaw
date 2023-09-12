@@ -47,14 +47,23 @@ body {
 }
 .solution-card:hover h3 {
   transition: all 0.3s ease-in;
-  color: #ff5dc8 !important;
+  color: #ffffff !important;
 }
 .solution-card:hover p {
   transition: all 0.3s ease-in;
-  color: #ff5dc8 !important;
+  color: #ffffff !important;
 }
 .solution-card:hover img {
   fill: #ff5dc8 !important;
+}
+.solution-list .solution-card:hover {
+  background-color: #ff5dc8;
+}
+.solution-list .solution-card:first-child:hover {
+  background-color: #135dbb;
+}
+.solution-list .solution-card:last-child:hover {
+  background-color: #b6d000;
 }
 .solution-title {
   font-family: 'Livvic';
