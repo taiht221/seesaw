@@ -181,4 +181,8 @@ $(document).ready(function () {
     grabCursor: true
 
   });
+
+
+  if (location.pathname != "/") $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+
 })
