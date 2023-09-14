@@ -245,18 +245,18 @@ footer {
 }
 
 ::placeholder {
-  color: #135dbb !important;
+  color: white !important;
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #135dbb !important;
+  color: white !important;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #135dbb !important;
+  color: white !important;
 }
 
 input:hover::placeholder {
@@ -998,4 +998,17 @@ input::-ms-input-placeholder :hover {
   display: block;
   width: 920px;
   font-family: Muahetrontrinh-Regular, cursive;
+}
+.heading2 {
+  color: #fff;
+  font-family: Livvic;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+}
+.book-form {
+  padding-top: 50px;
 }
