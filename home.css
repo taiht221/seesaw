@@ -1012,3 +1012,52 @@ input::-ms-input-placeholder :hover {
 .book-form {
   padding-top: 50px;
 }
+.b2b-section {
+  height: 500px;
+}
+.b2b-section .left {
+  max-width: 540px;
+}
+.b2b-section h3 {
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.b2b-section p {
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.b2b-section img {
+  margin-top: -40px;
+}
+.b2b-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+}
+.b2b-detail h3 {
+  color: #ff5dc8;
+  font-family: Livvic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.b2b-detail p {
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}

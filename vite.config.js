@@ -12,6 +12,7 @@ module.exports = defineConfig({
         booking: resolve(__dirname, 'booking.html'),
         blog: resolve(__dirname, 'blog.html'),
         blogDetail: resolve(__dirname, 'blog-detail.html'),
+        b2b: resolve(__dirname, 'b2b.html'),
       },
     },
   },
