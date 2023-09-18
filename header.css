@@ -1,7 +1,7 @@
 .header {
   background-color: transparent;
   width: 100%;
-  z-index: 51;
+  z-index: 49;
   position: relative;
 }
 .header .logo a {
