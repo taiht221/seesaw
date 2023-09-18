@@ -446,7 +446,6 @@ input::-ms-input-placeholder :hover {
   text-align: center;
   width: 50%;
   font-weight: 500;
-  text-shadow: 1px 0px black;
 }
 
 .shop-card {
@@ -986,7 +985,7 @@ input::-ms-input-placeholder :hover {
   color: #135dbb;
   text-align: center;
   font-family: Muahetrontrinh;
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1060,4 +1059,21 @@ input::-ms-input-placeholder :hover {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+.form-btn {
+  display: flex;
+  width: 230px;
+  height: 64px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
 }
