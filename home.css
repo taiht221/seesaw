@@ -1077,3 +1077,12 @@ input::-ms-input-placeholder :hover {
   line-height: normal;
   text-transform: uppercase;
 }
+.header-all {
+  color: #135dbb;
+  font-family: Livvic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

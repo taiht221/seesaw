@@ -182,9 +182,7 @@ $(document).ready(function () {
 
   });
 
-
-  if (location.pathname != "/") $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-
+  if (location.pathname != "/") { $('.header__wrap ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active'); }
   // set the modal menu element
   const $targetEl = document.getElementById('modalEl');
 
