@@ -309,6 +309,19 @@ input::-ms-input-placeholder :hover {
     font-size: 8px;
     font-weight: 400;
   }
+  .homebaner{
+    flex-direction: column  ;
+  }
+  .homebaner > div.homebanner-card {
+    margin-left : unset !important;
+    margin-bottom: 16px;
+    height: 130px;
+    max-height: 130px;
+  }
+  .blog-title-text{
+    padding-left:  5px !important;
+    padding-bottom:  5px !important;
+  }
 }
 .note-list {
   -webkit-transform-origin: top center;
@@ -1085,4 +1098,45 @@ input::-ms-input-placeholder :hover {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .special-card{
+    flex-direction: column;
+    width: 100%;
+  }
+  .solution-title{
+    text-align: center;
+    margin-bottom: 16px;
+    height:auto;
+  }
+  div >  img.-z-10{
+    display: none;
+  }
+  .home-intro{
+    background-color: #FEE861;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .home-desc-top, .home-desc-bot{
+    flex-direction: column;
+  }
+  .home-desc-top h2{
+    width: 100%;
+  }
+  .home-desc-top p{
+    width: 100%;
+  }
+  .home-desc-bot .home-desc-item{
+    margin-bottom: 16px;
+  }
+  .homebaner{
+    margin-bottom: 50px;
+    padding-top: 50px;
+  }
+  .heading{
+    margin: 25px 0;
+  }
+  .solution-list .solution-card{
+    height: 288px;
+  }
 }

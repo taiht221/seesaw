@@ -63,6 +63,12 @@ li {
     padding: 10px 15px;
     justify-content: space-between;
   }
+  .header__wrap ul{
+   display: none;
+  }
+  .header__wrap div:nth-child(3){
+    display: none;
+   }
   .header__wrap .logo,
   .header__wrap .hamburger {
     width: unset;
