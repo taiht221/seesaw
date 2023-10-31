@@ -81,6 +81,20 @@ $(document).ready(function () {
     navigation: false,
     slidesPerGroup: 3,
     slidesPerView: 3,
+    breakpoints: {
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
   })
   var paginationElement2 = $('.shopSwiper .swiper-pagination')
   var swiper2 = new Swiper('.shopSwiper', {
@@ -146,6 +160,20 @@ $(document).ready(function () {
     navigation: false,
     slidesPerGroup: 3,
     slidesPerView: 3,
+    breakpoints: {
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
   })
   var img
 
@@ -178,8 +206,33 @@ $(document).ready(function () {
       type: 'progressbar',
     },
     autoplay: true,
-    grabCursor: true
+    grabCursor: true,
+    breakpoints: {
+      390: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
 
+  });
+
+  var detailSwiper = new Swiper('.details-slide', {
+    pagination: '.swiper-pagination',
+    direction: 'vertical',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    mousewheelControl: true,
+    parallax: true,
+    speed: 600,
   });
 
   if (location.pathname != "/") { $('.header__wrap ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active'); }
