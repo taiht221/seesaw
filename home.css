@@ -322,6 +322,10 @@ input::-ms-input-placeholder :hover {
     padding-left:  5px !important;
     padding-bottom:  5px !important;
   }
+  .blog-title-text{
+    font-size: 36px;
+    text-align: left;
+  }
 }
 .note-list {
   -webkit-transform-origin: top center;
@@ -1137,7 +1141,7 @@ input::-ms-input-placeholder :hover {
     margin: 25px 0;
   }
   .solution-list .solution-card{
-    height: 288px;
+    height: 350px;
   }
   .about-page .heading{
     text-align: center;
@@ -1148,6 +1152,9 @@ input::-ms-input-placeholder :hover {
     margin-bottom: 36px;
   }
   .about-page .solution-content,.solution-title{
+    color:white
+  }
+  .homepage .special-card .solution-title{
     color:#135dbb
   }
   .about-page .solution-list .solution-card {
@@ -1391,5 +1398,30 @@ input::-ms-input-placeholder :hover {
   }
   .bg-move-img:nth-child(4){
     display: none;
+  }
+  .about-page div > img.bg-cover{
+    width: 100%;
+  }
+  .homepage h2.heading+p{
+    text-align: left;
+    padding: 0;
+  }
+  .homepage .home-desc-bot .home-desc-item {
+    margin-bottom: 24px;
+  }
+  .homepage .home-desc-bot .home-desc-item h3{
+    font-size: 20px;
+  }
+  .homepage .home-desc-bot .home-desc-item h3+p{
+    text-align: left;
+    padding: 0;
+  }
+  .footer-desc {
+    text-align: left;
+    padding: 0;
+  }
+  .b2bpage h3+p {
+    text-align: left;
+    padding: 0;
   }
 }
