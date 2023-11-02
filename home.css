@@ -1148,7 +1148,7 @@ input::-ms-input-placeholder :hover {
     margin-bottom: 36px;
   }
   .about-page .solution-content,.solution-title{
-    color: white;
+    color:#135dbb
   }
   .about-page .solution-list .solution-card {
     background-color: #ff5dc8;
@@ -1345,7 +1345,7 @@ input::-ms-input-placeholder :hover {
   }
   .b2b-section div{
    width: 100%;
-   padding: 0 20px;
+   padding: 10px;
   }
   .b2b-section div h3{
     font-size: 24px;
