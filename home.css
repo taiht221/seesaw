@@ -1427,4 +1427,9 @@ input::-ms-input-placeholder :hover {
   .video-wrap iframe{
     height: 250px;
   }
+  .boss-card img{
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
 }
