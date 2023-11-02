@@ -1371,4 +1371,25 @@ input::-ms-input-placeholder :hover {
   .b2b-section div.justify-between div .b2b-detail h3{
     font-size: 18px;
   }
+  .blogdetailpage h3.similar-title{
+    font-size: 24px;
+  }
+  .similar-title + p{
+    font-size: 16px;
+    text-align: left;
+    padding: 0px;
+    margin-bottom: 16px;
+  }
+  .bg-move-img:nth-child(2){
+    display: none;
+  }
+  .bg-move-img:nth-child(3){
+    display: none;
+  }
+  .bg-move-img:nth-child(1){
+    display: none;
+  }
+  .bg-move-img:nth-child(4){
+    display: none;
+  }
 }
