@@ -257,4 +257,6 @@ $(document).ready(function () {
   };
 
   modal.show();
+
+  AOS.init({disable: 'mobile'});
 })
