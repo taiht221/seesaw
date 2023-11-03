@@ -315,12 +315,13 @@ input::-ms-input-placeholder :hover {
   .homebaner > div.homebanner-card {
     margin-left : unset !important;
     margin-bottom: 16px;
-    height: 130px;
-    max-height: 130px;
+    height: 180px;
+    max-height: 180px;
   }
-  .blog-title-text{
-    padding-left:  5px !important;
+  .homebanner-card .blog-title-text{
+    padding-left:  15px !important;
     padding-bottom:  5px !important;
+    bottom: 15%;
   }
   .blog-title-text{
     font-size: 36px;
