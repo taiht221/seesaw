@@ -1433,4 +1433,25 @@ input::-ms-input-placeholder :hover {
     display: block;
     margin: 0 auto;
   }
+  #myTab{
+    flex-wrap: nowrap;
+  }
+  #myTab li{
+    margin-right: 0px;
+  } 
+  .similar-card-title, .similar-card-price{
+    font-size: 16px;
+  }
+  #bottom-right-modal .cart-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } 
+  #bottom-right-modal .cart-body{
+    overflow-y:scroll;
+    max-height: 75%;
+  } 
+  #bottom-right-modal .cart-body + div{
+    position: relative;
+  }
 }
