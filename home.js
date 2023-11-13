@@ -224,17 +224,13 @@ $(document).ready(function () {
 
   });
 
-  var detailSwiper = new Swiper('.details-slide', {
-    pagination: '.swiper-pagination',
+  var swiper6 = new Swiper('.swiper6', {
     direction: 'vertical',
-    slidesPerView: 1,
-    paginationClickable: true,
-    spaceBetween: 30,
     mousewheelControl: true,
-    parallax: true,
-    speed: 600,
+    slidesPerView: 1,
+    // freeMode: true,
+    // freeModeSticky: true
   });
-
   if (location.pathname != "/") { $('.header__wrap ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active'); }
   // set the modal menu element
   const $targetEl = document.getElementById('modalEl');
@@ -259,4 +255,5 @@ $(document).ready(function () {
   modal.show();
 
   AOS.init({disable: 'mobile'});
+  
 })
