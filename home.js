@@ -224,12 +224,19 @@ $(document).ready(function () {
 
   });
 
-  var swiper6 = new Swiper('.swiper6', {
-    direction: 'vertical',
-    mousewheelControl: true,
+  var swiper6 = new Swiper('.detailSwiper', {
     slidesPerView: 1,
-    // freeMode: true,
-    // freeModeSticky: true
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      dynamicBullets:true
   });
   if (location.pathname != "/") { $('.header__wrap ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active'); }
   // set the modal menu element

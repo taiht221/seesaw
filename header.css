@@ -151,7 +151,7 @@ li {
   .header__mobile .menu-right a {
     width: 100%;
   }
-  .header__mobile .menu-right a,p {
+  .header__mobile .menu-right a,p.nav_link {
     letter-spacing: 0.5px;
     padding: 15px;
     font-size: 24px;

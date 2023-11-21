@@ -1454,4 +1454,13 @@ input::-ms-input-placeholder :hover {
   #bottom-right-modal .cart-body + div{
     position: relative;
   }
+  main.details-page .describe-text p.block{
+    padding: none;
+  }
+  .details-page .shopSwiper .swiper-button-prev{
+    bottom: 0px;
+  }
+  .details-page .shopSwiper .swiper-button-next{
+    bottom: 0px;
+  }
 }
