@@ -1294,16 +1294,6 @@ input::-ms-input-placeholder :hover {
   .booking{
     margin-bottom: 80px;
   }
-  .note-list{
-    width: 60px;
-    height: 60px;
-  }
-  .blogpage .banner-top .absolute .justify-around:nth-child(1) .note-list:nth-child(3){
-    display: none;
-  }
-  .blogpage .banner-top .absolute .justify-around:nth-child(2) .note-list:nth-child(3),.note-list:nth-child(2){
-    display: none;
-  }
   /* .note-list:nth-child(3){
     display: none;
   }
@@ -1462,5 +1452,14 @@ input::-ms-input-placeholder :hover {
   }
   .details-page .shopSwiper .swiper-button-next{
     bottom: 0px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #home_banner{
+    background-image: url("./home_banner2.png") !important;
   }
 }
