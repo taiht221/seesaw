@@ -1,18 +1,27 @@
 $(document).ready(function () {
   AOS.init()
   var idInput = 0
+  var idInputMobile = 0
   var noteList = document.querySelectorAll('.note-list')
+  var noteListMobile = document.querySelectorAll('.note-list-mobile')
 
   $('#banner-form').on('submit', function (e) {
     e.preventDefault()
     // console.log(noteList[idInput])
-    console.log($('input:first').val())
+    // console.log($('input:first').val())
     noteList[idInput].innerHTML = `<p class="note-text">${$('input:first').val()}</p>`
     idInput++
-    $('input:first').val('')
-    console.log(idInput)
     if (idInput == 10) idInput = 0
+
+    noteListMobile[idInputMobile].innerHTML = `<p class="note-text">${$('input:first').val()}</p>`
+    console.log(noteListMobile[idInputMobile])
+    idInputMobile++
+
+    $('input:first').val('')
+
+    if (idInputMobile == 3) idInputMobile = 0
   })
+
   function menuTop() {
     if ($(this).scrollTop() >= 300) {
       $('.header').addClass('active')
@@ -226,17 +235,17 @@ $(document).ready(function () {
 
   var swiper6 = new Swiper('.detailSwiper', {
     slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      dynamicBullets:true
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    dynamicBullets: true
   });
   if (location.pathname != "/") { $('.header__wrap ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active'); }
   // set the modal menu element
@@ -261,6 +270,6 @@ $(document).ready(function () {
 
   modal.show();
 
-  AOS.init({disable: 'mobile'});
-  
+  AOS.init({ disable: 'mobile' });
+
 })
