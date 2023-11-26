@@ -1466,3 +1466,22 @@ input::-ms-input-placeholder :hover {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 991px) and (min-height: 500px) {
+  .nav_link {
+    font-size: 10px;
+    text-transform: capitalize;
+  }
+  h3.solution-title {
+    font-size: 12px;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  .home-intro h2 {
+    font-size: 24px;
+  }
+  .home-intro p.block {
+    font-size: 12px;
+    width: 70%;
+  }
+}
