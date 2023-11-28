@@ -1484,4 +1484,65 @@ input::-ms-input-placeholder :hover {
     font-size: 12px;
     width: 70%;
   }
+  .shopSwiper .swiper-wrapper .swiper-slide div {
+    padding: 0 10px;
+  }
+  .shopSwiper .swiper-pagination-progressbar {
+    bottom: 0px;
+    width: 30%;
+    right: 20%;
+    left: unset;
+    z-index: 10;
+  }
+  .shopSwiper .shopSwiper-desc {
+    padding: 10px 0;
+  }
+  .shopSwiper .shopSwiper-desc h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .shopSwiper .shopSwiper-desc p:last-child {
+    margin-bottom: 32px;
+  }
+  .shopSwiper .swiper-button-prev {
+    bottom: -15px;
+  }
+  .shopSwiper .swiper-button-next {
+    bottom: -15px;
+  }
+  .game-card {
+    padding: 0 10px;
+  }
+  .intro-card .book-form {
+    height: 500px;
+  }
+  .book-form h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .book-form form div {
+    margin-bottom: 10px;
+  }
+  #myTabContent .knowledge a {
+    width: 30%;
+    margin-left: 5px;
+  }
+  .details-page .describe-text {
+    overflow-y: scroll;
+  }
+  .details-page .describe-text h1 {
+    font-size: 24px;
+  }
+  .details-page .describe-text div span {
+    font-size: 16px;
+  }
+  .details-page .describe-text p {
+    font-size: 16px;
+  }
+  .quantity-button {
+    flex-direction: column;
+  }
+  .quantity-button button.font-bold {
+    margin-top: 15px;
+  }
 }
