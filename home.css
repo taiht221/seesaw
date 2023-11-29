@@ -956,7 +956,6 @@ input::-ms-input-placeholder :hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 500px;
 }
 .home-intro .heading {
   margin-bottom: 24px;
