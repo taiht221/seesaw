@@ -650,6 +650,11 @@ input::-ms-input-placeholder :hover {
   font-family: unset;
   content: '';
 }
+.blogDetailSwiper .swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: unset;
+  content: '';
+}
 .bookSwiper .swiper-button-prev {
   top: unset;
   bottom: 30px;
