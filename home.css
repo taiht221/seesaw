@@ -1550,3 +1550,15 @@ input::-ms-input-placeholder :hover {
     margin-top: 15px;
   }
 }
+#bottom-right-modal .cart-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#bottom-right-modal .cart-body {
+  overflow-y: scroll;
+  max-height: 75%;
+}
+#bottom-right-modal .cart-body + div {
+  position: relative;
+}
