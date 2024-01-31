@@ -815,11 +815,11 @@ input::-ms-input-placeholder :hover {
 }
 
 .primary {
-  animation: primary 5s linear infinite;
+  animation: primary 8s linear infinite;
 }
 
 .secondary {
-  animation: secondary 5s linear infinite;
+  animation: secondary 8s linear infinite;
 }
 
 @keyframes primary {
